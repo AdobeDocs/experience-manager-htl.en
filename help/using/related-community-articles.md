@@ -26,7 +26,7 @@ Here is a listing of the available content:
 1. [Creating a HTML Template Language component that uses the AEM QueryBuilder API](https://helpx.adobe.com/experience-manager/using/htl_querybuilder.html)
 1. [Creating a HTML Template Language and Sling Model DOM parser component](https://helpx.adobe.com/experience-manager/using/domparser.html)
 1. [Creating an AEM HTML Template Language Component that posts data using AJAX](https://helpx.adobe.com/experience-manager/using/htl_ajax.html)
-1. [Creating an AEM HTL component that uses JavaScrip](https://helpx.adobe.com/experience-manager/using/htl_js.html)
+1. [Creating an AEM HTL component that uses JavaScript](https://helpx.adobe.com/experience-manager/using/htl_js.html)
 
 Ask the Expert sessions:
 
