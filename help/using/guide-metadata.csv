@@ -1,17 +1,17 @@
-"filename","title","description","feature","topic","role","level"
-"./metadata.md","","","","","",""
-"./help/using/TOC.md","","","","","",""
-"help/using/overview.md","Adobe Experience Manager HTL Overview","The purpose of HTL supported by AEM, is to offer a highly productive enterprise-level web framework that increases security, and allows HTML developers without Java knowledge to better participate in AEM projects.","","","",""
-"help/using/update.md","What is HTL","HTML Template Language - HTL - is Adobe Experience Manager’s preferred and recommended server-side template system for HTML. ","","","",""
-"help/using/getting-started.md","Getting Started with HTL","HTL supported by AEM takes the place of JSP as the preferred and recommended server-side template system for HTML in AEM.","","","",""
-"help/using/htl-specification.md","The HTL Specification","The Adobe HTL specification","","","",""
-"help/using/global-objects.md","HTL Global Objects","Without having to specify anything, HTL provides access to all objects that were commonly available in JSP after including global.jsp.","","","",""
-"help/using/use-api-java.md","HTL Java Use-API","The HTML Template Language - HTL - Java Use-API enables a HTL file to access helper methods in a custom Java class. ","","","",""
-"help/using/use-api-javascript.md","HTL JavaScript Use-API","The HTML Template Language - HTL - JavaScript Use-API enables a HTL file to access helper code written in JavaScript.","","","",""
-"help/using/block-statements.md","HTL Block Statements","HTML Template Language (HTL) block statements are custom data attributes added directly to existing HTML.","","","",""
-"help/using/use-api.md","HTL Use-API","Two APIs are available for HTL - Java Use-API and Javascript Use-API","","","",""
-"help/using/dev-tools.md","Developer Tools","A list of HTL development tools","","","",""
-"help/using/htl-tck.md","The HTL TCK","HTL is the official server-side template system for AEM","","","",""
-"help/using/expression-language.md","HTL Expression Language","The HTML Template Language uses an expression language to access the data structures that provide the dynamic elements of the HTML output.","","","",""
-"help/using/code-samples.md","Code Samples","Code samples including the We.Retail Reference Implementation","","","",""
-"help/using/standardization.md","Standardization","Standardization for HTL including the HTL specification and the HTL TCK.","","","",""
+filename,title,description,feature,topic,role,level
+./metadata.md,,,,,,
+./help/using/TOC.md,,,Developer Tools,,Developer,
+help/using/overview.md,Adobe Experience Manager HTL Overview,"The purpose of HTL supported by AEM, is to offer a highly productive enterprise-level web framework that increases security, and allows HTML developers without Java knowledge to better participate in AEM projects.",,,,
+help/using/update.md,What is HTL,HTML Template Language - HTL - is Adobe Experience Manager’s preferred and recommended server-side template system for HTML. ,,,,
+help/using/getting-started.md,Getting Started with HTL,HTL supported by AEM takes the place of JSP as the preferred and recommended server-side template system for HTML in AEM.,,,,
+help/using/htl-specification.md,The HTL Specification,The Adobe HTL specification,,,,
+help/using/global-objects.md,HTL Global Objects,"Without having to specify anything, HTL provides access to all objects that were commonly available in JSP after including global.jsp.",,,,
+help/using/use-api-java.md,HTL Java Use-API,The HTML Template Language - HTL - Java Use-API enables a HTL file to access helper methods in a custom Java class. ,,,,
+help/using/use-api-javascript.md,HTL JavaScript Use-API,The HTML Template Language - HTL - JavaScript Use-API enables a HTL file to access helper code written in JavaScript.,,,,
+help/using/block-statements.md,HTL Block Statements,HTML Template Language (HTL) block statements are custom data attributes added directly to existing HTML.,,,,
+help/using/use-api.md,HTL Use-API,Two APIs are available for HTL - Java Use-API and Javascript Use-API,,,,
+help/using/dev-tools.md,Developer Tools,A list of HTL development tools,,,,
+help/using/htl-tck.md,The HTL TCK,HTL is the official server-side template system for AEM,,,,
+help/using/expression-language.md,HTL Expression Language,The HTML Template Language uses an expression language to access the data structures that provide the dynamic elements of the HTML output.,,,,
+help/using/code-samples.md,Code Samples,Code samples including the We.Retail Reference Implementation,,,,
+help/using/standardization.md,Standardization,Standardization for HTL including the HTL specification and the HTL TCK.,,,,
