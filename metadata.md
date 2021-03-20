@@ -1,13 +1,9 @@
 ---
-product: Adobe Experience Manager
+solution: Experience Manager
+type: Documentation
+product: adobe experience manager
 git-repo: https://github.com/AdobeDocs/experience-manager-htl.en
 index: y
-solution-title: Learn & Support for HTL
-solution-hub-url: https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/home.html
-getting-started-title: Getting Started Developing for AEM
-getting-started-url: https://docs.adobe.com/content/help/en/experience-manager-cloud-service/core-concepts/home.html
-tutorials-title: AEM Tutorials
-tutorials-url: https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html
 ---
 
 # Metadata for internal use
@@ -27,6 +23,9 @@ metadata.md
 * `product`
 * `git-repo`
 * `index: y`
+
+No longer used:
+
 * `solution-title`
 * `solution-hub-url`
 * `getting-started-title`
