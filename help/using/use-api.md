@@ -1,8 +1,8 @@
 ---
 title: HTL Use-API
 description: Two APIs are available for HTL - Java Use-API and Javascript Use-API
+exl-id: 8f95707e-952c-4efe-a44e-9a1ad501605e
 ---
-
 # HTL Use-API {#htl-use-api}
 
 HTL encourages separation of concerns by not allowing business logic to mix with markup. Business logic can be implemented through the Use-API. 

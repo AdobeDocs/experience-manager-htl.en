@@ -1,8 +1,8 @@
 ---
 title: HTL Block Statements
 description: HTML Template Language (HTL) block statements are custom data attributes added directly to existing HTML.
+exl-id: a517dcef-ab7a-4d4c-a1a9-2e57aad034f7
 ---
-
 # HTL Block Statements {#htl-block-statements}
 
 HTML Template Language (HTL) block statements are custom `data` attributes added directly to existing HTML. This allows easy and unobtrusive annotation of a prototype static HTML page, converting it to a functioning dynamic template without breaking the validity of the HTML code. 

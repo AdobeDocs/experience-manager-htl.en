@@ -1,8 +1,8 @@
 ---
 title: Getting Started with HTL
 description: HTL supported by AEM takes the place of JSP as the preferred and recommended server-side template system for HTML in AEM.
+exl-id: c95eb1b3-3b96-4727-8f4f-d54e7136a8f9
 ---
-
 # Getting Started with HTL {#getting-started-with-htl}
 
 The HTML Template Language (HTL) supported by Adobe Experience Manager (AEM) is the preferred and recommended server-side template system for HTML in AEM. It takes the place of JSP (JavaServer Pages) as used in previous versions of AEM. 

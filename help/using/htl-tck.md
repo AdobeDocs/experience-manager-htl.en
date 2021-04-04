@@ -1,8 +1,8 @@
 ---
 title: The HTL TCK
 description: HTL is the official server-side template system for AEM
+exl-id: 31fb850f-2729-4cfc-affe-ee458adcd6c4
 ---
-
 # The HTL TCK {#the-htl-tck}
 
 ## What is HTL TCK

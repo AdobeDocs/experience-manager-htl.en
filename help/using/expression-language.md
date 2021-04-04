@@ -1,8 +1,8 @@
 ---
 title: HTL Expression Language
 description: The HTML Template Language uses an expression language to access the data structures that provide the dynamic elements of the HTML output.
+exl-id: 57e3961b-8c84-4d56-a049-597c7b277448
 ---
-
 # HTL Expression Language {#htl-expression-language}
 
 The HTML Template Language uses an expression language to access the data structures that provide the dynamic elements of the HTML output. These expressions are delimited by characters `${` and `}`. To avoid malformed HTML, expressions can only be used in attribute values, in element content, or in comments. 
