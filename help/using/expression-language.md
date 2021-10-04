@@ -331,7 +331,7 @@ The following examples show that the format is specified first, then the value t
 
 ### Internationalization {#internationalization}
 
-Translates the string to the language of the current *source* (see below), using the current [dictionary](https://docs.adobe.com/content/help/en/experience-manager-65/developing/components/internationalization/i18n-translator.html). If no translation is found, the original string is used.
+Translates the string to the language of the current *source* (see below), using the current [dictionary](https://experienceleague.adobe.com/docs/experience-manager-65/developing/components/internationalization/i18n-translator.html). If no translation is found, the original string is used.
 
 ```xml
 ${'Page' @ i18n}

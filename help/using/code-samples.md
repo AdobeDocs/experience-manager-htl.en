@@ -7,7 +7,7 @@ exl-id: cdc0a525-e5d1-4d7f-97ae-b9192163caee
 
 The following are code samples for HTL: 
 
-* [WKND Tutorial](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) - This tutorial walks through the implementation of an AEM site for a fictitious lifestyle brand the WKND and covers fundamental topics like project setup, Core Components, Editable Templates, Client-side libraries, and component development with Adobe Experience Manager Sites, all implemented in HTL.
+* [WKND Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) - This tutorial walks through the implementation of an AEM site for a fictitious lifestyle brand the WKND and covers fundamental topics like project setup, Core Components, Editable Templates, Client-side libraries, and component development with Adobe Experience Manager Sites, all implemented in HTL.
 * [HTL TodoMVC Example](https://github.com/Adobe-Marketing-Cloud/aem-sightly-sample-todomvc) - An AEM + HTL implementation of the famous exercise.
 
 Ask the Expert sessions:

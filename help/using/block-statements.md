@@ -455,7 +455,7 @@ cssClassName='className'}"></article>
 
 >[!NOTE]
 >
->AEM offers clear and simple logic controlling the decoration tags that wrap included elements. For details see [Decoration Tag](https://docs.adobe.com/content/help/en/experience-manager-65/developing/components/decoration-tag.html) in the developing components documentation.
+>AEM offers clear and simple logic controlling the decoration tags that wrap included elements. For details see [Decoration Tag](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/decoration-tag.html) in the developing components documentation.
 
 ### include {#include}
 
