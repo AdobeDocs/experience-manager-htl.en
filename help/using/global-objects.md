@@ -1,6 +1,6 @@
 ---
-title: HTL Global Objects
-description: Without having to specify anything, HTL provides access to all objects that were commonly available in JSP after including global.jsp.
+title: HTL global objects
+description: Learn about enumerable objects, Java-backed objects, and JavaScript-backed objects. Find the variable names and descriptions for these HTL global objects used in AEM.
 exl-id: ca590b92-f1b3-4e44-a04a-a2c10dff256f
 ---
 # HTL Global Objects {#htl-global-objects}
