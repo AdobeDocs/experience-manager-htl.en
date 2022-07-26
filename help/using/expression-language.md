@@ -1,6 +1,6 @@
 ---
-title: HTL Expression Language
-description: The HTML Template Language uses an expression language to access the data structures that provide the dynamic elements of the HTML output.
+title: HTL expression language
+description: Learn about using HTL expression language in AEM. The HTML Template Language uses an expression language to access the data structures that provide the dynamic elements of the HTML output.
 exl-id: 57e3961b-8c84-4d56-a049-597c7b277448
 ---
 # HTL Expression Language {#htl-expression-language}
