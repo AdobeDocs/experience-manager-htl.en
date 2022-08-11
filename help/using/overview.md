@@ -1,8 +1,9 @@
 ---
 title: HTL overview
-description: Learn how AEM supports HTML template language (HTL) to offer a productive enterprise-level web framework. HTL increases security and allows HTML developers without Java knowledge to better participate in AEM projects.
+description: Learn how AEM supports HTML template language (HTL) to offer a productive enterprise-level web framework that increases security and allows HTML developers without Java knowledge to better participate in AEM projects.
 exl-id: 5d06ff25-d681-4b95-8375-c28a8364eb7e
 ---
+
 # Overview {#overview}
 
 The purpose of HTML Template Language (HTL), supported by Adobe Experience Manager (AEM), is to offer a highly productive enterprise-level web framework that increases security, and allows HTML developers without Java knowledge to better participate in AEM projects.
@@ -35,6 +36,14 @@ The diagram above shows following improvements in efficiency potentially made po
 * **JSP / HTL:** Since HTL itself doesn't require any Java knowledge and is straight-forward to write, any developer with HTML expertise is empowered to edit the templates.
 * **Java:** Thanks to the clear and simple to use Use-API provided by HTL, the interface with the business logic is clarified, which also benefits Java development overall.
 
-**Read next:**
+## Video Introduction {#video}
 
-* [Getting Started with the HTML Template Language](getting-started.md)
+The following video from an [AEM Gems session,](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-introduction-to-htl.html) gives an overview of the purpose of HTL as well as implementation examples.
+
+>[!VIDEO](https://video.tv.adobe.com/v/19504/?quality=9)
+
+Please note that the video refers to HTL by its former name, Sightly.
+
+## Next Steps {#next-steps}
+
+Now you know the objectives and advantages of HTL, get started with the language by reviewing the document [Getting Started with the HTML Template Language.](getting-started.md)

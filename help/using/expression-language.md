@@ -1,11 +1,12 @@
 ---
 title: HTL expression language
-description: Learn about using HTL expression language in AEM. The HTML Template Language uses an expression language to access the data structures that provide the dynamic elements of the HTML output.
+description: HTL uses an expression language to access the data structures that provide the dynamic elements of the HTML output.
 exl-id: 57e3961b-8c84-4d56-a049-597c7b277448
 ---
+
 # HTL Expression Language {#htl-expression-language}
 
-The HTML Template Language uses an expression language to access the data structures that provide the dynamic elements of the HTML output. These expressions are delimited by characters `${` and `}`. To avoid malformed HTML, expressions can only be used in attribute values, in element content, or in comments. 
+The HTML Template Language (HTL) uses an expression language to access the data structures that provide the dynamic elements of the HTML output. These expressions are delimited by characters `${` and `}`. To avoid malformed HTML, expressions can only be used in attribute values, in element content, or in comments. 
 
 ```xml
 <!-- ${component.path} -->
@@ -431,3 +432,10 @@ Escaping and XSS protection can also be turned off:
 |`styleString`|Within CSS strings|Encodes characters that would break out of the string.|
 |`styleComment`|Within CSS comments|Validates the CSS comment, outputs nothing if validation fails.|
 |`unsafe`|Only if none of the above does the job|Disables escaping and XSS protection completely.|
+
+## Additional Resources {#additional-resources}
+
+If you want to dive in to HTL directly consider checking out:
+
+* [The WKND tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) - Use HTL to implement an simple AEM project from scratch
+* [The HTL specification](htl-specification.md) - If you have specific questions about HTL syntax
