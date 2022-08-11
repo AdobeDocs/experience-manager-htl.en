@@ -1,8 +1,9 @@
 ---
 title: HTL Java Use-API
-description: The HTML Template Language - HTL - Java Use-API enables a HTL file to access helper methods in a custom Java class.
+description: The HTL Java Use-API enables a HTL file to access helper methods in a custom Java class.
 exl-id: 9a9a2bf8-d178-4460-a3ec-cbefcfc09959
 ---
+
 # HTL Java Use-API {#htl-java-use-api}
 
 The HTML Template Language (HTL) Java Use-API enables an HTL file to access helper methods in a custom Java class through `data-sly-use`. This allows all complex business logic to be encapsulated in the Java code, while the HTL code deals only with direct markup production. 
@@ -613,3 +614,10 @@ The `data-sly-use` statement directs HTL to adapt the current `Resource` to an `
 It is also possible to employ as a use-class any class that is adaptable from [`org.apache.sling.api.SlingHttpServletRequest`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/SlingHttpServletRequest.html)
 
 As with the above case of a use-class adaptable from `Resource`, a use-class adaptable from [`SlingHttpServletRequest`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/SlingHttpServletRequest.html) can be specified in the `data-sly-use` statement. Upon execution the current request will be adapted to the class given and the resulting object will be made available within HTL.
+
+## Additional Resources {#additional-resources}
+
+If you want to dive in to HTL directly consider checking out:
+
+* [The WKND tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) - Use HTL to implement an simple AEM project from scratch
+* [The HTL specification](htl-specification.md) - If you have specific questions about HTL syntax

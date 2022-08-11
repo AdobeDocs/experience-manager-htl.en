@@ -1,8 +1,9 @@
 ---
 title: Developer Tools
-description: A list of HTL development tools
+description: Check out these tools for developing in HTL.
 exl-id: c5683ee4-a052-4a6f-8ad1-e18a4201414e
 ---
+
 # Developer Tools {#developer-tools}
 
 The following developer tools are available for HTL: 

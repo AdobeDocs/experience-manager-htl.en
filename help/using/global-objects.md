@@ -1,21 +1,22 @@
 ---
 title: HTL global objects
-description: Learn about enumerable objects, Java-backed objects, and JavaScript-backed objects. Find the variable names and descriptions for these HTL global objects used in AEM.
+description: Learn about enumerable objects, Java-backed objects, and JavaScript-backed objects in HTL.
 exl-id: ca590b92-f1b3-4e44-a04a-a2c10dff256f
 ---
+
 # HTL Global Objects {#htl-global-objects}
 
-Without having to specify anything, HTL provides access to all objects that were commonly available in JSP after including `global.jsp`. These objects are in addition to any that may be introduced through the [Use-API](use-api.md). 
+Without having to specify anything, HTL provides access to all objects that were commonly available in JSP after including `global.jsp`. These objects are in addition to any that may be introduced through the [Use-API.](use-api.md)
 
 ## Enumerable Objects {#enumerable-objects}
 
-These objects provide convenient access to commonly used information. Their content can be accessed with the dot notation, and they can be iterated-through using `data-sly-list` or `data-sly-repeat`.
+These objects provide convenient access to commonly used information. Their content can be accessed with dot notation, and they can be iterated-through using `data-sly-list` or `data-sly-repeat`.
 
-|Variable Name|Description|
-|--- |--- |
-|`properties`|List of properties of the current Resource. Backed by [org.apache.sling.api.resource.ValueMap](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/ValueMap.html)|
-|`pageProperties`|List of page properties of the current Page. Backed by [org.apache.sling.api.resource.ValueMap](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/ValueMap.html)|
-|`inheritedPageProperties`|List of inherited page properties of the current Page. Backed by [org.apache.sling.api.resource.ValueMap](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/ValueMap.html)|
+|Variable Name|Description| Backed By |
+|--- |--- |--- |
+|`properties`|List of properties of the current resource | [`org.apache.sling.api.resource.ValueMap`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/ValueMap.html)|
+|`pageProperties`|List of page properties of the current page | [`org.apache.sling.api.resource.ValueMap`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/ValueMap.html)|
+|`inheritedPageProperties`|List of inherited page properties of the current page | [`org.apache.sling.api.resource.ValueMap`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/ValueMap.html)|
 
 ## Java-backed Objects {#java-backed-objects}
 
@@ -53,46 +54,9 @@ The most useful variables in the table below are highlighted in bold.
 
 It is possible to back HTL logic with JavaScript. However the preferred or recommended method is by using [Sling Models.](https://sling.apache.org/documentation/bundles/models.html)
 
-<!-- 
+## Additional Resources {#additional-resources}
 
-Comment Type: draft
+If you want to dive in to HTL directly consider checking out:
 
-<p> </p> 
-<p>JS-specific context variables: These supply access to asynchronous implementations of all the Java objects listed below). To write HTL code that is portable to granite.js, you must use the variables provided by aem and sly, not the native Java variables.</p> 
-<ul> 
- <li>wcm
-  <ul> 
-   <li>currentPage</li> 
-   <li>nativePage: [com.day.cq.wcm.apiPage]</li> 
-   <li>properties: {<i>enumerable</i>}</li> 
-  </ul> </li> 
- <li>granite
-  <ul> 
-   <li>request
-    <ul> 
-     <li>parameters: {<i>enumerable</i>}</li> 
-     <li>nativeRequest: [org.apache.sling.scripting.core.impl.helper.OnDemandReaderRequest]</li> 
-     <li>pathInfo
-      <ul> 
-       <li>nativePathInfo: [SlingRequestPathInfo: path='/content/geometrixx/en/jcr:content/par/text', selectorString='null', extension='html', suffix='null']</li> 
-      </ul> </li> 
-    </ul> </li> 
-   <li>resource
-    <ul> 
-     <li>nativeResource: [Paragraph, path=/content/geometrixx/en/jcr:content/par/text, type=wcm/foundation/components/text, cssClass=default, column=0/0, diffInfo=[null], resource=[JcrNodeResource, type=wcm/foundation/components/text, superType=null, path=/content/geometrixx/en/jcr:content/par/text]]</li> 
-     <li>path: "/content/geometrixx/en/jcr:content/par/text"</li> 
-     <li>properties: {sling:resourceType,jcr:created,jcr:lastModified,jcr:createdBy, textIsRich,jcr:lastModifiedBy,jcr:primaryType}</li> 
-    </ul> </li> 
-   <li>properties: {sling:resourceType,jcr:created,jcr:lastModified,jcr:createdBy, textIsRich,jcr:lastModifiedBy,jcr:primaryType}</li> 
-  </ul> </li> 
-</ul> 
-<p>JS specific non-HTL related variables. Present due to JS-implementation. Generally not used in templating:</p> 
-<ul> 
- <li>console: JS Object</li> 
- <li>exports: JS Object</li> 
- <li>module: JS Object</li> 
- <li>setImmediate: JS Function</li> 
- <li>setTimeout: JS Function</li> 
- <li>use: JS Function</li> 
-</ul>
--->
+* [The WKND tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) - Use HTL to implement an simple AEM project from scratch
+* [The HTL specification](htl-specification.md) - If you have specific questions about HTL syntax

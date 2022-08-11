@@ -1,8 +1,9 @@
 ---
 title: What are HTL block statements?
-description: Learn about HTL block statements, or HTML Template Language (HTL). Block statements are custom data attributes added directly to existing HTML.
+description: Learn about HTL block statements, the custom data attributes added directly to existing HTML.
 exl-id: a517dcef-ab7a-4d4c-a1a9-2e57aad034f7
 ---
+
 # HTL Block Statements {#htl-block-statements}
 
 HTML Template Language (HTL) block statements are custom `data` attributes added directly to existing HTML. This allows easy and unobtrusive annotation of a prototype static HTML page, converting it to a functioning dynamic template without breaking the validity of the HTML code. 
@@ -589,3 +590,10 @@ Although not a valid HTML 5 tag, the `<sly>` tag can be displayed in the final o
 The goal of the `<sly>` element is to make it more obvious that the element is not output. If you want you can still use `data-sly-unwrap`.
 
 As with `data-sly-unwrap`, try to minimize the use of this.
+
+## Additional Resources {#additional-resources}
+
+If you want to dive in to HTL directly consider checking out:
+
+* [The WKND tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) - Use HTL to implement an simple AEM project from scratch
+* [The HTL specification](htl-specification.md) - If you have specific questions about HTL syntax
