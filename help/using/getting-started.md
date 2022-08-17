@@ -14,6 +14,16 @@ This document gives an overview of the purpose of HTL as well as an intorduction
 >
 >This document presents the purpose of HTL and an overview of its fundamental structure and concepts. If you have quesitons about specific syntax, please refer to the [HTL specification.](specification.md)
 
+## HTL Layers {#layers}
+
+HTL as used in AEM can be defined by a number of layers.
+
+1. **HTL Specifiation** - HTL is an open-source, platform-agnostic specification, which anyone is free to implement.
+1. **Sling HTL Scripting Engine** - The Sling project has created the reference implementation of HTL, which is used by AEM.
+1. **AEM Extensions** - AEM builds on top of the Sling HTL Scripting Engine in order to offer developers convenient features specific to AEM.
+
+This HTL documentation focuses on using HTL to develop AEM solutions and as such, it will touch all three layers, linking external resources as necessary.
+
 ## Fundamental Concepts of HTL {#fundamental-concepts-of-htl}
 
 The HTML Template Language uses an expression language to insert pieces of content into the rendered markup, and HTML5 data attributes to define statements over blocks of markup (like conditions or iterations). As HTL gets compiled into Java Servlets, the expressions and the HTL data attributes are both evaluated entirely server-side, and nothing remains visible in the resulting HTML.

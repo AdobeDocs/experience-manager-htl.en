@@ -6,11 +6,12 @@ exl-id: c0657476-4db6-4fad-ad87-9252b5003237
 
 # The HTL Specification {#htl-specification}
 
-The HTML Template Language (HTL), [formerly known as Sightly,](history.md) was introduced with Adobe Experience Manager 6.0 and is the preferred and recommended server-site template system for HTML, taking the place of JSP (JavaServer Pages). 
+The HTML Template Language (HTL) is the preferred and recommended server-site template system for HTML.
 
-The full HTL specification, which defines the syntax and the behavior of the language, is detailed in its [Open Source Git repository](https://github.com/adobe/htl-spec)
+## HTL Layers {#layers}
 
-If you are not familiar with HTL and its capabilities, please consider these resources:
+HTL as used in AEM can be defined by a number of layers.
 
-* [Getting Started with HTL](getting-started.md) - Learn about HTLs purpose, capabilities, and basic concepts
-* [The WKND tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) - Use HTL to implement an simple AEM project from scratch
+1. **[HTL Specifiation](https://github.com/adobe/htl-spec)** - HTL is an open-source, platform-agnostic specification, which anyone is free to implement. Its specs are maintained in its GitHub repo.
+1. **[Sling HTL Scripting Engine](https://sling.apache.org/documentation/bundles/scripting/scripting-htl.html)** - The Sling project has created the reference implementation of HTL, which is used by AEM.
+1. **[AEM Extensions](aem-extensions.md)** - AEM builds on top of the Sling HTL Scripting Engine in order to offer developers convenient features specific to AEM.

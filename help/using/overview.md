@@ -8,11 +8,11 @@ exl-id: 5d06ff25-d681-4b95-8375-c28a8364eb7e
 
 The purpose of HTML Template Language (HTL), supported by Adobe Experience Manager (AEM), is to offer a highly productive enterprise-level web framework that increases security, and allows HTML developers without Java knowledge to better participate in AEM projects.
 
-The HTML Template Language is the preferred and recommended server-side template system for HTML in AEM. HTL was introduced with AEM 6.0 and takes the place of JSP (JavaServer Pages). For web developers who need to build robust enterprise websites, the HTML Template Language helps to achieve increased security and development efficiency. 
+[Introduced in AEM 6.0,](history.md) the HTML Template Language is the preferred and recommended server-side template system for HTML in AEM. For web developers who need to build robust enterprise websites, the HTML Template Language helps to achieve increased security and development efficiency. 
 
 ## Increased Security {#increased-security}
 
-The HTML Template Language increases the security of sites that use it in their implementation, as compared to JSP and to most other template systems, because HTL is capable of automatically applying the proper context-aware escaping to all variables being output to the presentation layer. HTL makes this possible because it understands the HTML syntax, and uses that knowledge to adjust the required escaping for expressions, based on their position in the markup. This will for instance result in expressions placed in `href` or `src` attributes to be escaped differently from expressions placed in other attributes, or elsewhere.
+The HTML Template Language increases the security of sites that use it in their implementation, as compared to most other template systems, because HTL is capable of automatically applying the proper context-aware escaping to all variables being output to the presentation layer. HTL makes this possible because it understands the HTML syntax, and uses that knowledge to adjust the required escaping for expressions, based on their position in the markup. This will for instance result in expressions placed in `href` or `src` attributes to be escaped differently from expressions placed in other attributes, or elsewhere.
 
 While the same result can be achieved with template languages like JSP, there the developer must manually ensure that the proper escaping is applied to each variable. As a single omission or mistake on the applied escaping is potentially sufficient to cause a cross-site scripting (XSS) vulnerability, we decided to automate this task with HTL. If needed, developers can still specify a different escaping on the expressions, but with HTL the default behavior is much more likely to correspond to the desired behavior, reducing the likelihood of errors.
 
@@ -42,7 +42,7 @@ The following video from an [AEM Gems session,](https://experienceleague.adobe.c
 
 >[!VIDEO](https://video.tv.adobe.com/v/19504/?quality=9)
 
-Please note that the video refers to HTL by its former name, Sightly.
+Please note that the video refers to HTL by [its former name, Sightly.](history.md)
 
 ## Next Steps {#next-steps}
 
