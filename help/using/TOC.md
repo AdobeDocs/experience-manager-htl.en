@@ -20,4 +20,3 @@ role: Developer
   + [HTL Java Use-API](java-use-api.md)
   + [Developer Tools](developer-tools.md)
   + [Code Samples](code-samples.md)
-  + [Standardization](standardization.md)
