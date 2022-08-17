@@ -1,12 +1,12 @@
 ---
 title: HTL Java Use-API
-description: The HTL Java Use-API enables a HTL file to access helper methods in a custom Java class.
+description: The HTL Java Use-API enables an HTL file to access helper methods in a custom Java class.
 exl-id: 9a9a2bf8-d178-4460-a3ec-cbefcfc09959
 ---
 
 # HTL Java Use-API {#htl-java-use-api}
 
-The HTL Java Use-API enables a HTL file to access helper methods in a custom Java class.
+The HTL Java Use-API enables an HTL file to access helper methods in a custom Java class.
 
 ## Use Case {#use-case}
 
@@ -33,9 +33,9 @@ This example illustrates the usage of the Use-API.
 
 >[!NOTE]
 >
->This example is simplfied in order to simply illustrate its use. In a production environment, it is recommended to use [Sling models.](https://sling.apache.org/documentation/bundles/models.html)
+>This example is simplified in order to simply illustrate its use. In a production environment, it is recommended to use [Sling models.](https://sling.apache.org/documentation/bundles/models.html)
 
-We'll start with an HTL component, called `info`, that does not have a use-class. It consists of a single file, `/apps/my-example/components/info.html`
+We start with an HTL component, called `info`, that does not have a use-class. It consists of a single file, `/apps/my-example/components/info.html`
 
 ```xml
 <div>
@@ -54,7 +54,7 @@ We also add some content for this component to render at `/content/my-example/`:
 }
 ```
 
-When this content is accessed, the HTL file is executed. Within the HTL code we use the context object `properties` to access the current resource's `title` and `description` and display them. The output file `/content/my-example.html` will be:
+When this content is accessed, the HTL file is executed. Within the HTL code, we use the context object `properties` to access the current resource's `title` and `description` and display them. The output file `/content/my-example.html` will be:
 
 ```html
 <div>
@@ -65,7 +65,7 @@ When this content is accessed, the HTL file is executed. Within the HTL code we 
 
 ### Adding a Use-Class {#adding-a-use-class}
 
-The `info` component as it stands does not need a use-class to perform its very simple function. There are cases, however, where you need to do things that cannot be done in HTL and so you need a use-class. But keep in mind the following:
+The `info` component as it stands does not need a use-class to perform its simple function. There are cases, however, where you need to do things that cannot be done in HTL and so you need a use-class. But keep in mind the following:
 
 >[!NOTE]
 >
@@ -116,7 +116,7 @@ Now let's walk through the different parts of the code.
 The Java use-class can be installed in two ways:
 
 * **Local** - In a local install, the Java source file is placed alongside the HTL file, in the same repository folder. The source is automatically compiled on demand. No separate compilation or packaging step is required.
-* **Bundel** - In a bundle install, the Java class must be compiled and deployed within an OSGi bundle using the standard AEM bundle deployment mechanism (see the section [Bundled Java Class](#bundled-java-class)).
+* **Bundle** - In a bundle install, the Java class must be compiled and deployed within an OSGi bundle using the standard AEM bundle deployment mechanism (see the section [Bundled Java Class](#bundled-java-class)).
 
 To know which method to use when, keep these two points in mind:
 
@@ -149,7 +149,7 @@ public class Info extends WCMUsePojo {
 
 ### Extending `WCMUsePojo` {#extending-wcmusepojo}
 
-While there are number of ways of incorporating a Java class with HTL (see the section [Alternatives to `WCMUsePojo`](#alternatives-to-wcmusepojo)), the simplest is to extend the `WCMUsePojo` class. For our example `/apps/my-example/component/info/Info.java`:
+While there are a number of ways of incorporating a Java class with HTL (see the section [Alternatives to `WCMUsePojo`](#alternatives-to-wcmusepojo)), the simplest is to extend the `WCMUsePojo` class. For our example `/apps/my-example/component/info/Info.java`:
 
 ```java
 package apps.my_example.components.info;
@@ -218,7 +218,7 @@ Alternatively, commonly used context objects can be accessed directly by the app
 
 Once the use-class has initialized, the HTL file is run. During this stage HTL will typically pull in the state of various member variables of the use-class and render them for presentation.
 
-To provide access to these values from within the HTL file you must define custom getter methods in the use-class according to the following naming convention:
+To provide access to these values from within the HTL file, you must define custom getter methods in the use-class according to the following naming convention:
 
 * A method of the form `getXyz` will expose within the HTL file an object property called `xyz`.
 
@@ -293,7 +293,7 @@ Now, when we access `/content/my-example.html` it will return the following `/co
 
 >[!NOTE]
 >
->This example was simplfied in order to simply illustrate its use. In a production environment, it is recommended to use [Sling models.](https://sling.apache.org/documentation/bundles/models.html)
+>This example was simplified in order to simply illustrate its use. In a production environment, it is recommended to use [Sling models.](https://sling.apache.org/documentation/bundles/models.html)
 
 ## Beyond the Basics {#beyond-the-basics}
 
@@ -310,7 +310,7 @@ For details, please refer to the Sling [HTL Scripting Engine documentation.](htt
 
 ### Bundled Java Class {#bundled-java-class}
 
-With a bundled use-class the class must be compiled, packaged and deployed in AEM using the standard OSGi bundle deployment mechanism. In contrast with a local install, the use-class package declaration should be named normally as in this `/apps/my-example/component/info/Info.java` example.
+With a bundled use-class the class must be compiled, packaged, and deployed in AEM using the standard OSGi bundle deployment mechanism. In contrast with a local install, the use-class package declaration should be named normally as in this `/apps/my-example/component/info/Info.java` example.
 
 ```java
 package org.example.app.components;

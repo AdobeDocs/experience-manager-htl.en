@@ -27,11 +27,11 @@ Even within the same component, HTL files can be used alongside JSPs and ESPs. F
 
 ## Frequently Asked Questions {#frequently-asked-questions}
 
-These are some quesitons commonly asked by exerpienced AEM developers new to HTL.
+These are some questions commonly asked by experienced AEM developers new to HTL.
 
 ### Does HTL have any limitations that JSP doesn't? {#limitations}
 
-HTL doesn't really have limitations compared to JSP in the sense that what can be done with JSP should also be achievable with HTL. However, HTL is by design stricter than JSP in several aspects, and what can be achieved all in a single JSP file, might need to be separated into a Java class or a JavaScript file to be achievable in HTL. But this is generally desired to ensure a good separation of concerns between the logic and the markup.
+HTL doesn't really have limitations compared to JSP in the sense that what can be done with JSP should also be achievable with HTL. However, HTL is by design stricter than JSP in several aspects. What can be achieved all in a single JSP file, might need to be separated into a Java class or a JavaScript file to be achievable in HTL. But this is generally desired to ensure a good separation of concerns between the logic and the markup.
 
 ### Does HTL support JSP Tag Libraries? {#tag-libraries}
 
@@ -55,6 +55,6 @@ In AEM 6.0 and 6.1, HTL was referred to as **Sightly**. Adobe renamed it to **HT
 
 >[!NOTE]
 >
->This naming change does not impact code or the API, therefore compatibility is not affected. For more information please [refer to this announcement video.](https://helpx.adobe.com/experience-manager/how-to/announce-htl.html)
+>This naming change does not impact code or the API, therefore compatibility is not affected. For more information, please [refer to this announcement video.](https://helpx.adobe.com/experience-manager/how-to/announce-htl.html)
 
 To find out more about HTL and a great place to begin is our official [Getting Started with HTML Templating Language (HTL) Guide.](overview.md)

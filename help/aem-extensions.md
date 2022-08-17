@@ -1,8 +1,8 @@
 ---
 title: AEM Extensions
-description: AEM offers a number of extensions specific to AEM for your convenience as a developer.
+description: AEM offers extensions of HTL specific to AEM for your convenience as a developer.
 ---
 
 # AEM Extensions {#aem-extensions}
 
-AEM offers a number of extensions specific to AEM for your convenience as a developer.
+AEM offers extensions of HTL specific to AEM for your convenience as a developer.

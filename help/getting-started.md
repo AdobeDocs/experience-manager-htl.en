@@ -1,6 +1,6 @@
 ---
 title: Getting Started with HTL
-description: Learn about HTL, the preferred and recommended server-side template system for HTML in AEM, and understand the major concepts of the lanugage and its fundamental constructs.
+description: Learn about HTL, the preferred and recommended server-side template system for HTML in AEM, and understand the major concepts of the language and its fundamental constructs.
 exl-id: c95eb1b3-3b96-4727-8f4f-d54e7136a8f9
 ---
 
@@ -8,21 +8,21 @@ exl-id: c95eb1b3-3b96-4727-8f4f-d54e7136a8f9
 
 HTML Template Language (HTL) is the preferred and recommended server-side template system for HTML in Adobe Experience Manager. As in all HTML server-side templating systems, an HTL file defines the output sent to the browser by specifying the HTML itself, some basic presentation logic, and variables to be evaluated at runtime.
 
-This document gives an overview of the purpose of HTL as well as an intorduction to fundamental concepts and constructs of the language.
+This document gives an overview of the purpose of HTL as well as an introduction to fundamental concepts and constructs of the language.
 
 >[!TIP]
 >
->This document presents the purpose of HTL and an overview of its fundamental structure and concepts. If you have quesitons about specific syntax, please refer to the [HTL specification.](specification.md)
+>This document presents the purpose of HTL and an overview of its fundamental structure and concepts. If you have questions about specific syntax, please refer to the [HTL specification.](specification.md)
 
 ## HTL Layers {#layers}
 
 HTL as used in AEM can be defined by a number of layers.
 
-1. **[HTL Specifiation](specification.md)** - HTL is an open-source, platform-agnostic specification, which anyone is free to implement.
+1. **[HTL Specification](specification.md)** - HTL is an open-source, platform-agnostic specification, which anyone is free to implement.
 1. **[Sling HTL Scripting Engine](specification.md)** - The Sling project has created the reference implementation of HTL, which is used by AEM.
 1. **[AEM Extensions](specification.md)** - AEM builds on top of the Sling HTL Scripting Engine in order to offer developers convenient features specific to AEM.
 
-This HTL documentation focuses on using HTL to develop AEM solutions. As such, it will touch all three layers, linking external resources as necessary.
+This HTL documentation focuses on using HTL to develop AEM solutions. As such, it touches all three layers, linking external resources as necessary.
 
 ## Fundamental Concepts of HTL {#fundamental-concepts-of-htl}
 
@@ -30,7 +30,7 @@ The HTML Template Language uses an expression language to insert pieces of conte
 
 >[!TIP]
 >
->To run most examples provided on this page, a live execution environment called the [Read Eval Print Loop](https://github.com/Adobe-Marketing-Cloud/aem-htl-repl) can be used.
+>To run most examples provided on this page, a live execution environment called the [Read Eval Print Loop](https://github.com/adobe/aem-htl-repl) can be used.
 
 ### Blocks and Expressions {#blocks-and-expressions}
 
@@ -42,7 +42,7 @@ Here's a first example, which could be contained as is in a `template.html` file
 </h1>
 ```
 
-Two different kind of syntaxes can be distinguished:
+Two different kinds of syntaxes can be distinguished:
 
 * **Block Statements** - To conditionally display the `<h1>` element, a `data-sly-test` HTML5 data attribute is used. HTL provides multiple such attributes, which allow attaching behavior to any HTML element, and all are prefixed with `data-sly`.  
 * **Expression Language** - HTL expressions are delimited by the `${` and `}` characters. At runtime, these expressions are evaluated and their value is injected into the outgoing HTML stream.
@@ -51,11 +51,11 @@ See the [HTL specification](specification.md) for details on both syntaxes.
 
 ### The SLY Element {#the-sly-element}
 
-A central concept of HTL is to offer the possibility of reusing existing HTML elements to define block statements, which avoids the need of inserting additional delimiters to define where the statement starts and ends. This unobtrusive annotation of the markup to transform a static HTML into a functioning dynamic template offers the benefit of not breaking the validity of the HTML code, and therefore to still properly display, even as static files.
+A central concept of HTL is to offer the possibility of reusing existing HTML elements to define block statements, which avoid the need of inserting additional delimiters to define where the statement starts and ends. This unobtrusive annotation of the markup to transform a static HTML into a functioning dynamic template offers the benefit of not breaking the validity of the HTML code, and therefore to still properly display, even as static files.
 
 However, sometimes there might not be an existing element at the exact location where a block statement has to be inserted. For such cases, it is possible to insert a special `sly` element that will be automatically removed from the output, while executing the attached block statements and displaying its content accordingly.
 
-So following example:
+The following example...
 
 ```xml
 <sly data-sly-test="${properties.jcr:title && properties.jcr:description}">
@@ -64,16 +64,16 @@ So following example:
 </sly>
 ```
 
-will output something like following HTML, but only if there are both, a `jcr:title` and a `jcr:description` property defined, and if neither of them are empty:
+...will output something like following HTML, but only if there are both, a `jcr:title` and a `jcr:description` property defined, and if neither of them are empty:
 
 ```xml
 <h1>MY TITLE</h1>
 <p>MY DESCRIPTION</p>
 ```
 
-One thing to keep in mind is only to use the `sly` element when no existing element could have been annotated with the block statement, because `sly` elements deter the value offered by the language to not alter the static HTML when making it dynamic.
+One thing to keep in mind is only to use the `sly` element when no existing element could have been annotated with the block statement. This is because `sly` elements deter the value offered by the language to not alter the static HTML when making it dynamic.
 
-For example, if the previous example would have been wrapped already inside a `div` element, then the added `sly` element would be abusive:
+For example, if the previous example would have been wrapped inside a `div` element, then the added `sly` element would be abusive:
 
 ```xml
 <div>
@@ -132,7 +132,7 @@ As HTL uses data attributes to define block statements, it is not possible to de
 
 The reason for it is that the content of these contexts is text and not HTML, and contained HTML elements would be considered as simple character data. So without real HTML elements, there also cannot be `data-sly` attributes executed.
 
-This may sound like a big restriction, however it is a desired one, because the HTML Template Language shouldn't be abused to generate output that isn't HTML. The [Use-API for Accessing Logic](#use-api-for-accessing-logic) section below introduces how additional logic can be called from the template, which can be used if it is needed to prepare complex output for these contexts. For instance, an easy way to send data from the back-end to a front-end script, is to have the component's logic to generate a JSON string, which can then be placed in a data attribute with a simple HTL expression.
+This may sound like a significant restriction, however it is a desired one, because the HTML Template Language shouldn't be abused to generate output that isn't HTML. The [Use-API for Accessing Logic](#use-api-for-accessing-logic) section below introduces how additional logic can be called from the template, which can be used if it is needed to prepare complex output for these contexts. For instance, an easy way to send data from the back-end to a front-end script, is to have the component's logic to generate a JSON string, which can then be placed in a data attribute with a simple HTL expression.
 
 Following example illustrates the behavior for HTML comments, but in script or style elements, the same behavior would be observed:
 
@@ -189,9 +189,9 @@ Consider following example:
 </p>
 ```
 
-In most template languages, this example would potentially create a cross-site scripting (XSS) vulnerability, because even when all variables are automatically HTML-escaped, the `href` attribute must still be specifically URL-escaped. This omission is one of the most common errors, because it can be very easily forgotten, and it is difficult to spot in an automated manner.
+In most template languages, this example would potentially create a cross-site scripting (XSS) vulnerability, because even when all variables are automatically HTML-escaped, the `href` attribute must still be specifically URL-escaped. This omission is one of the most common errors, because it can be easily forgotten, and it is difficult to spot in an automated manner.
 
-To help with that, the HTML Template Language automatically escapes each variable accordingly to the context in which it is placed. This is possible thanks to the fact that HTL understand the syntax of HTML.
+To help with that, the HTML Template Language automatically escapes each variable accordingly to the context in which it is placed. This is possible thanks to the fact that HTL understands the syntax of HTML.
 
 Assuming following `logic.js` file:
 
@@ -215,7 +215,7 @@ The initial example will then result in following output:
 </p>
 ```
 
-Notice how the two attribute got escaped differently, because HTL knows that `href` and `src` attributes must be escaped for URI context. Also, if the URI started with `javascript:`, the attribute would have been removed entirely, unless the context were explicitly changed to something else.
+Notice how the two attributes got escaped differently, because HTL knows that `href` and `src` attributes must be escaped for URI context. Also, if the URI started with `javascript:`, the attribute would have been removed entirely, unless the context were explicitly changed to something else.
 
 For more details about how to control the escaping, refer to the [Expression Language Display Context](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#121-display-context) section of the HTL specifications.
 
@@ -229,7 +229,7 @@ Consider following example:
 
 If the value of the `class` property happens to be empty, the HTML Template Language will automatically remove the entire `class` attribute from the output.
 
-Again, this is possible, because HTL understand the HTML syntax and can therefore conditionally show attributes with dynamic values only if their value isn't empty. This is extremely convenient as it avoids adding a condition block around attributes, which would have made the markup invalid and unreadable.
+Again, this is possible, because HTL understands the HTML syntax and can therefore conditionally show attributes with dynamic values only if their value isn't empty. This is very convenient as it avoids adding a condition block around attributes, which would have made the markup invalid and unreadable.
 
 Additionally, the type of the variable placed in the expression matters:
 
@@ -243,7 +243,7 @@ Additionally, the type of the variable placed in the expression matters:
   * **true:** Displays the attribute without value (as a Boolean HTML attribute
   * **false:** Removes the attribute altogether.
 
-Here's an example of how a Boolean expression would allow to control a Boolean HTML attribute:
+Here's an example of how a Boolean expression would allow control of a Boolean HTML attribute:
 
 ```xml
 <input type="checkbox" checked="${properties.isChecked}"/>
@@ -263,7 +263,7 @@ In HTL, client libraries are loaded through a helper template provided by AEM, w
 * **`js`** - Loads only the JavaScript files of the referenced client libraries.
 * **`all`** - Loads all the files of the referenced client libraries (both CSS and JavaScript).
 
-Each helper template expects a `categories` option for referencing the desired client libraries. That option can be either an array of string values, or a string containing a comma separated values list.
+Each helper template expects a `categories` option for referencing the desired client libraries. That option can be either an array of string values, or a string containing a comma-separated values list.
 
 The following are two short examples.
 
@@ -298,7 +298,7 @@ The section on the template &amp; call statements in the [HTL specification](spe
 
 The best and most elegant way to pass data to the client in general, but even more so with HTL, is to use `data` attributes.
 
-The following example shows how the logic (which could also be written in Java) can be used to very conveniently serialize to JSON the object that is to be passed to the client, which can then very easily be placed into a `data` attribute:
+The following example shows how the logic (which could also be written in Java) can be used to conveniently serialize to JSON the object that is to be passed to the client, which can then easily be placed into a `data` attribute:
 
 ```xml
 <!--/* template.html file: */-->
@@ -319,7 +319,7 @@ use(function () {
 });
 ```
 
-From there, it is easy to imagine how a client-side JavaScript can access that attribute and parse again the JSON. This would for instance be the corresponding JavaScript to place into a client library:
+From there, it is easy to imagine how a client-side JavaScript can access that attribute and parse again the JSON. This would, for instance, be the corresponding JavaScript to place into a client library:
 
 ```javascript
 var elements = document.querySelectorAll("[data-json]");

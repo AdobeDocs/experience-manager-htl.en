@@ -12,6 +12,6 @@ The HTML Template Language (HTL) is the preferred and recommended server-site te
 
 HTL as used in AEM can be defined by a number of layers.
 
-1. **[HTL Specifiation](https://github.com/adobe/htl-spec)** - HTL is an open-source, platform-agnostic specification, which anyone is free to implement. Its specs are maintained in its GitHub repo.
+1. **[HTL Specification](https://github.com/adobe/htl-spec)** - HTL is an open-source, platform-agnostic specification, which anyone is free to implement. Its specs are maintained in its GitHub repo.
 1. **[Sling HTL Scripting Engine](https://sling.apache.org/documentation/bundles/scripting/scripting-htl.html)** - The Sling project has created the reference implementation of HTL, which is used by AEM.
 1. **[AEM Extensions](aem-extensions.md)** - AEM builds on top of the Sling HTL Scripting Engine in order to offer developers convenient features specific to AEM.
