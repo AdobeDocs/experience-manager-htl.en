@@ -97,10 +97,7 @@ Initialize another HTL template that can then be called using `data-sly-call`:
 
 >[!NOTE]
 >
->For more information on the Use-API, see:
->
->* [Java Use-API](use-api-java.md)
->* [JavaScript Use-API](use-api-javascript.md)
+>For more information on the Use-API, see the document [Java Use-API.](use-api-java.md)
 
 #### data-sly-use with resources {#data-sly-use-with-resources}
 

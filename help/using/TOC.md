@@ -19,7 +19,6 @@ role: Developer
   + [HTL Global Objects](global-objects.md)
   + [HTL Use-API](use-api.md)
   + [HTL Java Use-API](use-api-java.md)
-  + [HTL JavaScript Use-API](use-api-javascript.md)
   + [HTL Block Statements](block-statements.md)
   + [Developer Tools](dev-tools.md)
   + [The HTL TCK](htl-tck.md)
