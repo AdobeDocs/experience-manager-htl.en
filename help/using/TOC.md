@@ -17,7 +17,6 @@ role: Developer
   + [The HTL Specification](htl-specification.md)
 + HTML Template Language{#htl}
   + [HTL Global Objects](global-objects.md)
-  + [HTL Use-API](use-api.md)
   + [HTL Java Use-API](java-use-api.md)
   + [HTL Block Statements](block-statements.md)
   + [Developer Tools](dev-tools.md)
