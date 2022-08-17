@@ -155,7 +155,7 @@ Here is an example of how to set the context for expressions placed inside scrip
 <style> a { font-family: "${myFont @ context='styleString'}"; } </style>
 ```
 
-For more details about how to control the escaping, refer to the [Expression Language Display Context](expression-language.md#display-context) section.
+For more details about how to control the escaping, refer to the [Expression Language Display Context](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#121-display-context) section of the HTL specifications.
 
 ## General Capabilities of HTL {#general-capabilities-of-htl}
 
@@ -207,7 +207,7 @@ The initial example will then result in following output:
 
 Notice how the two attribute got escaped differently, because HTL knows that `href` and `src` attributes must be escaped for URI context. Also, if the URI started with `javascript:`, the attribute would have been removed entirely, unless the context were explicitly changed to something else.
 
-For more details about how to control the escaping, refer to the [Expression Language Display Context](expression-language.md#display-context) section.
+For more details about how to control the escaping, refer to the [Expression Language Display Context](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#121-display-context) section of the HTL specifications.
 
 ### Automatic Removal of Empty Attributes {#automatic-removal-of-empty-attributes}
 

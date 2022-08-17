@@ -19,6 +19,5 @@ role: Developer
   + [HTL Global Objects](global-objects.md)
   + [HTL Java Use-API](java-use-api.md)
   + [Developer Tools](developer-tools.md)
-  + [HTL Expression Language](expression-language.md)
   + [Code Samples](code-samples.md)
   + [Standardization](standardization.md)
