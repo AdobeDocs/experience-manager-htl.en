@@ -15,7 +15,7 @@ role: Developer
 + [The HTL Specification](specification.md)
 + [HTL Global Objects](global-objects.md)
 + [HTL Java Use-API](java-use-api.md)
-+ [AEM Extensions](aem-extensions)
++ [AEM Extensions](aem-extensions.md)
 + [Developer Tools](developer-tools.md)
 + [Code Samples](code-samples.md)
 + [History of HTL](history.md)
