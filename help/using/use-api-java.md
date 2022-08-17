@@ -29,7 +29,11 @@ The `bindings` map can contain objects that provide context to the currently exe
 
 ## A Simple Example {#a-simple-example}
 
-This example will illustrate the usage of the Use-API. This example is simplfied in order to simply illustrate its use. In a production environment it is recommended to use Sling models.
+This example illustrates the usage of the Use-API. 
+
+>[!NOTE]
+>
+>This example is simplfied in order to simply illustrate its use. In a production environment, it is recommended to use [Sling models.](https://sling.apache.org/documentation/bundles/models.html)
 
 We'll start with an HTL component, called `info`, that does not have a use-class. It consists of a single file, `/apps/my-example/components/info.html`
 
@@ -287,13 +291,16 @@ Now, when we access `/content/my-example.html` it will return the following `/co
 </div>
 ```
 
+>[!NOTE]
+>
+>This example was simplfied in order to simply illustrate its use. In a production environment, it is recommended to use [Sling models.](https://sling.apache.org/documentation/bundles/models.html)
+
 ## Beyond the Basics {#beyond-the-basics}
 
 In this section introduces some further features that go beyond the simple example described previously.
 
 * Passing parameters to a use-class
 * Bundled Java use-class
-* Alternatives to `WCMUsePojo`
 
 ### Passing Parameters {#passing-parameters}
 
@@ -323,140 +330,3 @@ And the `data-sly-use` statement must reference the fully qualified class name, 
   <p>${info.description}</p>
 </div>
 ```
-
-### Alternatives to `WCMUsePojo` {#alternatives-to-wcmusepojo}
-
-The most common way to create a Java use-class is to extend `WCMUsePojo`. However, there are a number of other options. To understand these variants it helps to understand how the HTL `data-sly-use` statement works under the hood.
-
-Suppose you have the following `data-sly-use` statement:
-
-```xml
-<div data-sly-use.localName="UseClass">
-```
-
-The system processes the statement as follows:
-
-1. First
-   * If there exists a local file `UseClass.java` in the same directory as the HTL file, try to compile and load that class. If successful go to (2).
-   * Otherwise, interpret `UseClass` as a fully qualified class name and try to load it from the OSGi environment. If successful go to (2).
-   * Otherwise, interpret `UseClass` as a path to a HTL or JavaScript file and load that file. If successful go to (4).
-1. Second
-   * Try to adapt the current `Resource` to `UseClass`. If successful, go to (3).
-   * Otherwise, try to adapt the current `Request` to `UseClass`. If successful, go to (3).
-   * Otherwise, try to instantiate `UseClass` with a zero-argument constructor. If successful, go to (3).
-1. Third
-   * Within HTL, bind the newly adapted or created object to the name `localName`.
-   * If `UseClass` implements [`org.apache.sling.scripting.sightly.pojo.Use`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?org/apache/sling/scripting/sightly/pojo/Use.html) then call the `init` method, passing the current execution context (in the form of a `javax.scripting.Bindings` object).
-1. Fourth
-   * If `UseClass` is a path to a HTL file containing a `data-sly-template`, prepare the template.
-   * Otherwise, if `UseClass` is a path to a JavaScript use-class, prepare the use-class.
-
-A few important points about the above flow:
-
-* Any class that is adaptable from `Resource`, adaptable from `Request`, or that has a zero-argument constructor can be a use-class. The class does not have to extend extend `WCMUsePojo` or even implement `Use`.
-* However, if the use-class does implement `Use`, then its `init` method will automatically be called with the current context, allowing you to place initialization code there that depends on that context.
-* A use-class that extends `WCMUsePojo` is just a special case of implementing `Use`. It provides the convenience context methods and its `activate` method is automatically called from `Use.init`.
-
-#### Directly Implement Interface Use {#directly-implement-interface-use}
-
-While the most common way to create a use-class is to extend `WCMUsePojo`, it is also possible to directly implement the [`org.apache.sling.scripting.sightly.pojo.Use`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?org/apache/sling/scripting/sightly/pojo/Use.html) interface itself.
-
-The `Use` interface defines only one method:
-
-[`void init(javax.script.Bindings bindings)`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/scripting/sightly/pojo/Use.html#init-javax.script.Bindings-)
-
-The `init` method will be called on initialization of the class with a `Bindings` object that holds all the context objects and any parameters passed into the use-class.
-
-All additional functionality (such as the equivalent of `WCMUsePojo.getProperties()`) must be implemented explicitly using the [`javax.script.Bindings`](http://docs.oracle.com/javase/7/docs/api/javax/script/Bindings.html) object. For example, note the usage in this `Info.java` example.
-
-```java
-import io.sightly.java.api.Use;
-
-public class MyComponent implements Use {
-   ...
-    @Override
-    public void init(Bindings bindings) {
-
-        // All standard objects/binding are available
-        Resource resource = (Resource)bindings.get("resource");
-        ValueMap properties = (ValueMap)bindings.get("properties");
-        ...
-
-        // Parameters passed to the use-class are also available
-        String param1 = (String) bindings.get("param1");
-    }
-    ...
-}
-```
-
-The main case for implementing the `Use` interface yourself instead of extending `WCMUsePojo` is when you wish to use a subclass of an already existing class as the use-class.
-
-#### Adaptable from Resource {#adaptable-from-resource}
-
-Another option is to use a helper class that is adaptable from `org.apache.sling.api.resource.Resource`.
-
-Let's say you need to write an HTL script that displays the mimetype of a DAM asset. In this case you know that when your HTL script is called, it will be within the context of a `Resource` that wraps a JCR `Node` with nodetype `dam:Asset`.
-
-You know that a `dam:Asset` node has a structure like this:
-
-```java
-{
-  "content": {
-    "dam": {
-      "WKND": {
-        "portraits": {
-          "jane_doe.jpg": {
-            ...
-          "jcr:content": {
-            ...
-            "metadata": {
-              ...
-            },
-            "renditions": {
-              ...
-              "original": {
-                ...
-                "jcr:content": {
-                  "jcr:primaryType": "nt:resource",
-                  "jcr:lastModifiedBy": "admin",
-                  "jcr:mimeType": "image/jpeg",
-                  "jcr:lastModified": "Fri Jun 13 2014 15:27:39 GMT+0200",
-                  "jcr:data": ...,
-                  "jcr:uuid": "22e3c598-4fa8-4c5d-8b47-8aecfb5de399"
-                }
-              },
-              "cq5dam.thumbnail.319.319.png": {
-                  ...
-              },
-              "cq5dam.thumbnail.48.48.png": {
-                  ...
-              },
-              "cq5dam.thumbnail.140.100.png": {
-                  ...
-              }
-            }
-          }  
-        }
-      }
-    }
-  }
-}
-```
-
-Here we show the asset (a JPEG image) that comes with a default install of AEM as part of the example project WKND. The asset is called `jane_doe.jpg` and its mimetype is `image/jpeg`.
-
-To access the asset from within HTL, you can declare [`com.day.cq.dam.api.Asset`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/asset/api/Asset.html) as the class in the `data-sly-use` statement and then use a get method of `Asset` to retrieve the desired information. Note the usage in this `mimetype.html` example.
-
-```xml
-<div data-sly-use.asset="com.day.cq.dam.api.Asset">
-  <p>${asset.mimeType}</p>
-</div>
-```
-
-The `data-sly-use` statement directs HTL to adapt the current `Resource` to an `Asset` and give it the local name `asset`. It then calls the `getMimeType` method of `Asset` using the HTL getter shorthand: `asset.mimeType`.
-
-#### Adaptable from Request {#adaptable-from-request}
-
-It is also possible to employ as a use-class any class that is adaptable from [`org.apache.sling.api.SlingHttpServletRequest`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/SlingHttpServletRequest.html)
-
-As with the above case of a use-class adaptable from `Resource`, a use-class adaptable from [`SlingHttpServletRequest`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/SlingHttpServletRequest.html) can be specified in the `data-sly-use` statement. Upon execution the current request will be adapted to the class given and the resulting object will be made available within HTL.
