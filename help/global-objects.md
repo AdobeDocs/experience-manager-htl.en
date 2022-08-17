@@ -63,4 +63,4 @@ It is possible to back HTL logic with JavaScript. However the preferred or recom
 If you want to dive in to HTL directly consider checking out:
 
 * [The WKND tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) - Use HTL to implement an simple AEM project from scratch
-* [The HTL specification](htl-specification.md) - If you have specific questions about HTL syntax
+* [The HTL specification](specification.md) - If you have specific questions about HTL syntax
