@@ -1,55 +1,18 @@
 ---
 title: Getting Started with HTL
-description: Learn how HTL takes the place of JSP as the preferred and recommended server-side template system for HTML in AEM, concepts of the lanugage, and fundamental constructs.
+description: Learn about HTL, the preferred and recommended server-side template system for HTML in AEM, and understand the major concepts of the lanugage and its fundamental constructs.
 exl-id: c95eb1b3-3b96-4727-8f4f-d54e7136a8f9
 ---
 
 # Getting Started with HTL {#getting-started-with-htl}
 
-The HTML Template Language (HTL) supported by Adobe Experience Manager (AEM) is the preferred and recommended server-side template system for HTML in AEM. It takes the place of JSP (JavaServer Pages) as used in previous versions of AEM. This document gives an overview of the purpose of HTL as well as an intorduction to fundamental concepts and constructs of the language.
+HTML Template Language (HTL) is the preferred and recommended server-side template system for HTML in Adobe Experience Manager. As in all HTML server-side templating systems, an HTL file defines the output sent to the browser by specifying the HTML itself, some basic presentation logic, and variables to be evaluated at runtime.
 
-If you want to dive right into HTL with some examples, skip to the section [Fundamental Concepts of HTL.](#fundamental-concepts-of-htl)
+This document gives an overview of the purpose of HTL as well as an intorduction to fundamental concepts and constructs of the language.
 
 >[!TIP]
 >
 >This document presents the purpose of HTL and an overview of its fundamental structure and concepts. If you have quesitons about specific syntax, please refer to the [HTL specification.](htl-specification.md)
-
-## HTL over JSP {#htl-over-jsp}
-
-It is recommended for new AEM projects to use the HTML Template Language, as it offers multiple benefits compared to JSP. For existing projects though, a migration only makes sense if it is estimated to be less effort than maintaining the existing JSPs for the coming years.
-
-But moving to HTL is not necessarily an all-or-nothing choice, because components written in HTL are compatible with components written in JSP or ESP. Meaning that existing projects can without a problem use HTL for new components, while keeping JSP for existing components.
-
-Even within the same component, HTL files can be used alongside JSPs and ESPs. Following example shows on **line 1** how to include an HTL file from a JSP file, and on **line 2** how a JSP file can be included from an HTL file:
-
-```xml
-<cq:include script="template.html"/>
-<sly data-sly-include="template.jsp"/>
-```
-
-## Frequently Asked Questions{#frequently-asked-questions}
-
-Before getting started with the HTML Template Language, let's start with answering upfront some questions related to the JSP vs HTL topic.
-
-### Does HTL have any limitations that JSP doesn't? {#limitations}
-
-HTL doesn't really have limitations compared to JSP in the sense that what can be done with JSP should also be achievable with HTL. However, HTL is by design stricter than JSP in several aspects, and what can be achieved all in a single JSP file, might need to be separated into a Java class or a JavaScript file to be achievable in HTL. But this is generally desired to ensure a good separation of concerns between the logic and the markup.
-
-### Does HTL support JSP Tag Libraries? {#tag-libraries}
-
-No, but as shown in the [Loading Client Libraries](#loading-client-libraries) section, the [template & call](block-statements.md#template-call) statements offer a similar pattern.
-
-### Can the HTL features be extended on an AEM project? {#extended}
-
-No, they cannot. HTL has powerful extension mechanisms for reuse of logic - the [Use-API](#use-api-for-accessing-logic) - and of markup (the [template & call](block-statements.md#template-call) statements), which can be used to modularize the code of projects.
-
-### What are the main benefits of HTL over JSP? {#benefits}
-
-Security and project efficiency are the main benefits, which are detailed on the [Overview](overview.md).
-
-### Will JSP eventually go away? {#go-away}
-
-At the current date, there are no plans along these lines.
 
 ## Fundamental Concepts of HTL {#fundamental-concepts-of-htl}
 

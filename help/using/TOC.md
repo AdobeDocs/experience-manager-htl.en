@@ -8,11 +8,11 @@ feature: Developer Tools
 role: Developer
 ---
 
-# Adobe Experience Manager HTL Help {#using}
+# Adobe Experience Manager HTL Help {#content}
 
 + [Overview](overview.md)
 + Getting Started{#getting-started}
-  + [What's in a name?](update.md)
+  + [What's in a name?](history.md)
   + [Getting Started with HTL](getting-started.md)
   + [The HTL Specification](htl-specification.md)
 + HTML Template Language{#htl}
