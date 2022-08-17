@@ -166,7 +166,7 @@ This section quickly walks through the general features of the HTML Template Lan
 
 The HTML Template Language (HTL) Java Use-API enables an HTL file to access helper methods in a custom Java class through `data-sly-use`. This allows all complex business logic to be encapsulated in the Java code, while the HTL code deals only with direct markup production.
 
-See the document [HTL Java Use-API](use-api-java.md) for more details.
+See the document [HTL Java Use-API](java-use-api.md) for more details.
 
 ### Automatic Context-Aware Escaping {#automatic-context-aware-escaping}
 
