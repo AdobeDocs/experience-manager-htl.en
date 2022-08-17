@@ -6,6 +6,37 @@ exl-id: 9a9a2bf8-d178-4460-a3ec-cbefcfc09959
 
 # HTL Java Use-API {#htl-java-use-api}
 
+<!--> from the getting started page
+
+### Use-API for Accessing Logic {#use-api-for-accessing-logic}
+
+Consider following example:
+
+```xml
+<p data-sly-use.logic="logic.js">${logic.title}</p>
+```
+
+And following `logic.js` server-side executed JavaScript file placed next to it:
+
+```javascript
+use(function () {
+    return {
+        title: currentPage.getTitle().substring(0, 10) + "..."
+    };
+});
+```
+
+As the HTML Template Language doesn't allow mixing code inside the markup, it offers instead the Use-API  extension mechanism to easily execute code from the template.
+
+The example above uses server-side executed JavaScript to shorten the title to 10 characters, but it could also have used Java code to do the same by providing a fully qualified Java class name. Generally, business logic should rather be built in Java, but when the component needs some view-specific changes from what the Java API provide, it can be convenient to use some server-side executed JavaScript to do that.
+
+More about this in following sections:
+
+* The section on the [`data-sly-use` statement](block-statements.md#use) explains everything that can be done with that statement.
+* The [Use-API page](use-api.md) provides some information to help choose between writing the logic in Java or in JavaScript.
+* And to detail how to write the logic, the [JavaScript Use-API](use-api-javascript.md) and the [Java Use-API](use-api-java.md) pages should help.
+<--->
+
 The HTML Template Language (HTL) Java Use-API enables an HTL file to access helper methods in a custom Java class through `data-sly-use`. This allows all complex business logic to be encapsulated in the Java code, while the HTL code deals only with direct markup production. 
 
 A Java Use-API object can be a simple POJO, instantiated by a particular implementation through the POJO's default constructor.

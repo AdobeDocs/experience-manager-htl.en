@@ -103,6 +103,8 @@ HTML comments cannot contain HTL comments and vice versa.
 
 In order to be able to make the best use of HTL, it is important to understand well the consequences of it being based on the HTML syntax.
 
+Please refer to the [Display Context section](https://github.com/adobe/htl-spec/blob/1.4/SPECIFICATION.md#121-display-context) of the HTL specification for more details.
+
 ### Element and Attribute Names {#element-and-attribute-names}
 
 Expressions can only be placed in HTML text or attribute values, but not within element names or attribute names, or it wouldn't be valid HTML anymore. In order to set element names dynamically, the [`data-sly-element`](block-statements.md#element) statement can be used on the desired elements, and to dynamically set attribute names, even setting multiple attributes at once, the [`data-sly-attribute`](block-statements.md#attribute) statement can be used.
@@ -156,47 +158,15 @@ Here is an example of how to set the context for expressions placed inside scrip
 
 For more details about how to control the escaping, refer to the [Expression Language Display Context](expression-language.md#display-context) section.
 
-### Lifting Limitations of Special Contexts {#lifting-limitations-of-special-contexts}
-
-In the special cases where it is needed to bypass the restrictions of the script, style, and comment contexts, it is possible to isolate their content in a separate HTL file. Everything located in its own file will be interpreted by HTL as a normal HTML fragment, forgetting the limiting context from which it might have been included.
-
-See the [Working with Client-Side Templates](#working-with-client-side-templates) section further down for an example.
-
->[!CAUTION]
->
->This technique can introduce cross-site scripting (XSS) vulnerabilities, and the security aspects should be carefully studied if this must be used. There usually are better ways to implement the same thing than to rely on this practice.
-
 ## General Capabilities of HTL {#general-capabilities-of-htl}
 
 This section quickly walks through the general features of the HTML Template Language.
 
 ### Use-API for Accessing Logic {#use-api-for-accessing-logic}
 
-Consider following example:
+The HTML Template Language (HTL) Java Use-API enables an HTL file to access helper methods in a custom Java class through `data-sly-use`. This allows all complex business logic to be encapsulated in the Java code, while the HTL code deals only with direct markup production.
 
-```xml
-<p data-sly-use.logic="logic.js">${logic.title}</p>
-```
-
-And following `logic.js` server-side executed JavaScript file placed next to it:
-
-```javascript
-use(function () {
-    return {
-        title: currentPage.getTitle().substring(0, 10) + "..."
-    };
-});
-```
-
-As the HTML Template Language doesn't allow mixing code inside the markup, it offers instead the Use-API  extension mechanism to easily execute code from the template.
-
-The example above uses server-side executed JavaScript to shorten the title to 10 characters, but it could also have used Java code to do the same by providing a fully qualified Java class name. Generally, business logic should rather be built in Java, but when the component needs some view-specific changes from what the Java API provide, it can be convenient to use some server-side executed JavaScript to do that.
-
-More about this in following sections:
-
-* The section on the [`data-sly-use` statement](block-statements.md#use) explains everything that can be done with that statement.
-* The [Use-API page](use-api.md) provides some information to help choose between writing the logic in Java or in JavaScript.
-* And to detail how to write the logic, the [JavaScript Use-API](use-api-javascript.md) and the [Java Use-API](use-api-java.md) pages should help.
+See the document [HTL Java Use-API](use-api-java.md) for more details.
 
 ### Automatic Context-Aware Escaping {#automatic-context-aware-escaping}
 
@@ -371,6 +341,16 @@ One special case, where the technique explained in the section [Lifting Limitati
 As shown above, the markup that will be included in the `script` element can contain HTL block statements and the expressions don't need to provide explicit contexts, because the content of the Handlebars template has been isolated in its own file. Also, this example shows how server-side executed HTL (like on the `h2` element) can be mixed with a client-side executed template language, like Handlebars (shown on the `h3` element).
 
 A more modern technique altogether, would however be to use the HTML `template` element instead, as the benefit would then be that it doesn't require to isolate the content of the templates into separate files.
+
+### Lifting Limitations of Special Contexts {#lifting-limitations-of-special-contexts}
+
+In the special cases where it is needed to bypass the restrictions of the script, style, and comment contexts, it is possible to isolate their content in a separate HTL file. Everything located in its own file will be interpreted by HTL as a normal HTML fragment, forgetting the limiting context from which it might have been included.
+
+See the [Working with Client-Side Templates](#working-with-client-side-templates) section further down for an example.
+
+>[!CAUTION]
+>
+>This technique can introduce cross-site scripting (XSS) vulnerabilities, and the security aspects should be carefully studied if this must be used. There usually are better ways to implement the same thing than to rely on this practice.
 
 ## Next Steps {#next-steps}
 
