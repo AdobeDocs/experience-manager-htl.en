@@ -12,7 +12,7 @@ This document gives an overview of the purpose of HTL as well as an intorduction
 
 >[!TIP]
 >
->This document presents the purpose of HTL and an overview of its fundamental structure and concepts. If you have quesitons about specific syntax, please refer to the [HTL specification.](htl-specification.md)
+>This document presents the purpose of HTL and an overview of its fundamental structure and concepts. If you have quesitons about specific syntax, please refer to the [HTL specification.](specification.md)
 
 ## Fundamental Concepts of HTL {#fundamental-concepts-of-htl}
 
@@ -34,11 +34,10 @@ Here's a first example, which could be contained as is in a `template.html` file
 
 Two different kind of syntaxes can be distinguished:
 
-* **[Block Statements](block-statements.md)** - To conditionally display the `<h1>` element, a [`data-sly-test`](block-statements.md#test) HTML5 data attribute is used. HTL provides multiple such attributes, which allow attaching behavior to any HTML element, and all are prefixed with `data-sly`.  
+* **Block Statements** - To conditionally display the `<h1>` element, a `data-sly-test` HTML5 data attribute is used. HTL provides multiple such attributes, which allow attaching behavior to any HTML element, and all are prefixed with `data-sly`.  
+* **Expression Language** - HTL expressions are delimited by the `${` and `}` characters. At runtime, these expressions are evaluated and their value is injected into the outgoing HTML stream.
 
-* **[Expression Language](expression-language.md)** - HTL expressions are delimited by the `${` and `}` characters. At runtime, these expressions are evaluated and their value is injected into the outgoing HTML stream.
-
-The two pages linked above provide overviews of important features available for the syntaxes.
+See the [HTL specification](specification.md) for details on both syntaxes.
 
 ### The SLY Element {#the-sly-element}
 
@@ -107,7 +106,7 @@ Please refer to the [Display Context section](https://github.com/adobe/htl-spec/
 
 ### Element and Attribute Names {#element-and-attribute-names}
 
-Expressions can only be placed in HTML text or attribute values, but not within element names or attribute names, or it wouldn't be valid HTML anymore. In order to set element names dynamically, the [`data-sly-element`](block-statements.md#element) statement can be used on the desired elements, and to dynamically set attribute names, even setting multiple attributes at once, the [`data-sly-attribute`](block-statements.md#attribute) statement can be used.
+Expressions can only be placed in HTML text or attribute values, but not within element names or attribute names, or it wouldn't be valid HTML anymore. In order to set element names dynamically, the `data-sly-element` statement can be used on the desired elements, and to dynamically set attribute names, even setting multiple attributes at once, the `data-sly-attribute` statement can be used.
 
 ```xml
 <h1 data-sly-element="${myElementName}" data-sly-attribute="${myAttributeMap}">...</h1>
@@ -240,7 +239,7 @@ Here's an example of how a Boolean expression would allow to control a Boolean H
 <input type="checkbox" checked="${properties.isChecked}"/>
 ```
 
-For setting attributes, the [`data-sly-attribute`](block-statements.md#attribute) statement might also be useful.
+For setting attributes, the `data-sly-attribute` statement might also be useful.
 
 ## Common Patterns with HTL {#common-patterns-with-htl}
 
@@ -248,7 +247,7 @@ This section introduces a few common scenarios and how to best solve them with t
 
 ### Loading Client Libraries {#loading-client-libraries}
 
-In HTL, client libraries are loaded through a helper template provided by AEM, which can be accessed through [`data-sly-use`](block-statements.md#use). Three templates are available in this file, which can be called through [`data-sly-call`](block-statements.md#template-call):
+In HTL, client libraries are loaded through a helper template provided by AEM, which can be accessed through `data-sly-use`. Three templates are available in this file, which can be called through `data-sly-call`:
 
 * **`css`** - Loads only the CSS files of the referenced client libraries.
 * **`js`** - Loads only the JavaScript files of the referenced client libraries.
@@ -283,7 +282,7 @@ The following are two short examples.
 
 In this example, in case the HTML `head` and `body` elements are placed in different files, the `clientlib.html` template would then have to be loaded in each file that needs it.
 
-The section on the [template & call](block-statements.md#template-call) statements provides more details about how declaring and calling such templates work.
+The section on the template &amp; call statements in the [HTL specification](specification.md) provides more details about how declaring and calling such templates work.
 
 ### Passing Data to the Client {#passing-data-to-the-client}
 
@@ -351,15 +350,3 @@ See the [Working with Client-Side Templates](#working-with-client-side-templates
 >[!CAUTION]
 >
 >This technique can introduce cross-site scripting (XSS) vulnerabilities, and the security aspects should be carefully studied if this must be used. There usually are better ways to implement the same thing than to rely on this practice.
-
-## Next Steps {#next-steps}
-
-To continue your discovery of HTL, please see these additional documents.
-
-* [Expression Language](expression-language.md) - to learn in detail what that can be done within HTL expressions
-* [Block Statements](block-statements.md) - to discover all the block statements available in HTL, and how to use them
-
-If you want to dive in to HTL directly consider checking out:
-
-* [The WKND tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) - Use HTL to implement an simple AEM project from scratch
-* [The HTL specification](htl-specification.md) - If you have specific questions about HTL syntax

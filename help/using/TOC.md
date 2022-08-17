@@ -14,11 +14,10 @@ role: Developer
 + Getting Started{#getting-started}
   + [What's in a name?](history.md)
   + [Getting Started with HTL](getting-started.md)
-  + [The HTL Specification](htl-specification.md)
+  + [The HTL Specification](specification.md)
 + HTML Template Language{#htl}
   + [HTL Global Objects](global-objects.md)
   + [HTL Java Use-API](java-use-api.md)
-  + [HTL Block Statements](block-statements.md)
   + [Developer Tools](dev-tools.md)
   + [The HTL TCK](htl-tck.md)
   + [HTL Expression Language](expression-language.md)

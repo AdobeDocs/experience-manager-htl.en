@@ -35,11 +35,11 @@ HTL doesn't really have limitations compared to JSP in the sense that what can b
 
 ### Does HTL support JSP Tag Libraries? {#tag-libraries}
 
-No, but as shown in the [Loading Client Libraries](#loading-client-libraries) section, the [template & call](block-statements.md#template-call) statements offer a similar pattern.
+No, but as shown in the [Loading Client Libraries](getting-started.md#loading-client-libraries) section of the Getting Started document, the template &amp; call statements offer a similar pattern.
 
 ### Can the HTL features be extended on an AEM project? {#extended}
 
-No, they cannot. HTL has powerful extension mechanisms for reuse of logic (the [Use-API](#use-api-for-accessing-logic)) and of markup (the [template & call](block-statements.md#template-call) statements), which can be used to modularize the code of projects.
+No, they cannot. HTL has powerful extension mechanisms for reuse of logic (the [Use-API](#use-api-for-accessing-logic)) and of markup (the template &amp; call statements), which can be used to modularize the code of projects.
 
 ### What are the main benefits of HTL over JSP? {#benefits}
 
