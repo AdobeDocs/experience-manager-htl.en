@@ -306,7 +306,7 @@ In this section introduces some further features that go beyond the simple examp
 
 Parameters can be passed to a use-class upon initialization. For example, we could do something like this:
 
-For details, please refer to the Sling [HTL Scripting Engine documentation.](https://sling.apache.org/documentation/bundles/scripting/scripting-htl.html#passing-parameters)
+For details, please refer to the Sling [HTL Scripting Engine documentation.](https://sling.apache.org/documentation/bundles/scripting/scripting-htl.html#passing-parameters-to-java-use-objects)
 
 ### Bundled Java Class {#bundled-java-class}
 
