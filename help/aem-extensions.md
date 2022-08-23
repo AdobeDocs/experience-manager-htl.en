@@ -1,8 +1,8 @@
 ---
 title: AEM Extensions
 description: AEM offers extensions of HTL specification to AEM for your convenience as a developer.
+exl-id: d78cb84d-f958-45e2-9c6c-df86a68277d5
 ---
-
 # AEM Extensions {#aem-extensions}
 
 Similar to the [Apache Sling extensions of the HTL specification,](https://sling.apache.org/documentation/bundles/scripting/scripting-htl.html#extensions-of-the-htl-specification-1) AEM offers some additional expression options that make working with AEM concepts a bit easier directly in the HTL scripts.
