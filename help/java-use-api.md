@@ -304,7 +304,7 @@ In this section introduces some further features that go beyond the simple examp
 
 ### Passing Parameters {#passing-parameters}
 
-Parameters can be passed to a use-class upon initialization. For example, we could do something like this:
+Parameters can be passed to a use-class upon initialization.
 
 For details, please refer to the Sling [HTL Scripting Engine documentation.](https://sling.apache.org/documentation/bundles/scripting/scripting-htl.html#passing-parameters-to-java-use-objects)
 
