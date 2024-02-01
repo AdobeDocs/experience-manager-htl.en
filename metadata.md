@@ -4,6 +4,7 @@ type: Documentation
 product: adobe experience manager
 git-repo: https://github.com/AdobeDocs/experience-manager-htl.en
 index: y
+recommendations: noDisplay
 ---
 
 # Metadata for internal use
