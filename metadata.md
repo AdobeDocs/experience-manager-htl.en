@@ -9,15 +9,15 @@ recommendations: noDisplay
 
 # Metadata for internal use
 
-Metadata in the GitHub authoring system is hierarchal and is defined the the following increasing levels of precedent.
+The GitHub authoring system defines metadata hierarchically, with increasing levels of precedent as seen in the following:
 
 1. metadata.md
 1. ToC
 1. Article
 
-Metadata defined in the metadata.md file apply to the entire repo, but can be overridden at the ToC and article levels. Any overriding of the metadata should be done at the lowest level possible.
+The metadata defined in the metadata.md file apply to the entire repo, but can be overridden at the ToC and article levels. Any overriding of the metadata should be done at the lowest level possible.
 
-The metadata in the experience-manager-core-components.en repo is the minimum required.
+The metadata in the `experience-manager-core-components.en` repo is the minimum required.
 
 metadata.md
 
@@ -45,4 +45,3 @@ Article
 * `description`
 * `index: n` (only for previous versions of components)
 
-Additional information about the metadata can be found in the [internal authoring guide.](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/authoring/features/metadata.html#solution)
