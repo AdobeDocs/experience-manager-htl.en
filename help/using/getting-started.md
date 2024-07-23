@@ -12,7 +12,7 @@ This document gives an overview of the purpose of HTL as well as an introduction
 
 >[!TIP]
 >
->This document presents the purpose of HTL and an overview of its fundamental structure and concepts. If you have questions about specific syntax, please refer to the [HTL specification.](specification.md)
+>This document presents the purpose of HTL and an overview of its fundamental structure and concepts. If you have questions about specific syntax, please refer to the [HTL specification](specification.md).
 
 ## HTL Layers {#layers}
 

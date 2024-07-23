@@ -6,7 +6,7 @@ exl-id: ca590b92-f1b3-4e44-a04a-a2c10dff256f
 
 # HTL Global Objects {#htl-global-objects}
 
-Without having to specify anything, HTL provides access to many objects useful to the developer. These objects are in addition to any that may be introduced through the [Use-API.](java-use-api.md)
+Without having to specify anything, HTL provides access to many objects useful to the developer. These objects are in addition to any that may be introduced through the [Use-API](java-use-api.md).
 
 >[!NOTE]
 >
@@ -24,7 +24,7 @@ These objects provide convenient access to commonly used information. Their cont
 
 ## Java-backed Objects {#java-backed-objects}
 
-Each of the following objects is backed by the corresponding Java object.
+The corresponding Java object backs each of the following objects.
 
 | Variable Name |Description |
 |---|---|
@@ -56,4 +56,4 @@ Each of the following objects is backed by the corresponding Java object.
 
 ## JavaScript-backed Objects {#javascript-backed-objects}
 
-It is possible to back HTL logic with JavaScript. However the preferred or recommended method is by using [Sling Models.](https://sling.apache.org/documentation/bundles/models.html)
+It is possible to back HTL logic with JavaScript. However, the preferred or recommended method is by using [Sling Models](https://sling.apache.org/documentation/bundles/models.html).
