@@ -188,7 +188,7 @@ public class Info extends WCMUsePojo {
 
 Typically, the [activate](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/sightly/WCMUsePojo.html) method is used to precompute and store (in member variables) the values needed in your HTL code, based on the current context (the current request and resource, for example).
 
-The `WCMUsePojo` class provides access to the same set of context objects as are available within an HTL file (see the document [Global Objects.](global-objects.md))
+The `WCMUsePojo` class provides access to the same set of context objects as are available within an HTL file (see the document [Global Objects](global-objects.md).)
 
 In a class extending `WCMUsePojo`, you can access context objects using their names:
 
@@ -306,7 +306,7 @@ This section introduces some further features that go beyond the simple example 
 
 Parameters can be passed to a use-class upon initialization.
 
-For details, please refer to the Sling [HTL Scripting Engine documentation.](https://sling.apache.org/documentation/bundles/scripting/scripting-htl.html#passing-parameters-to-java-use-objects)
+For details, please refer to the Sling [HTL Scripting Engine documentation](https://sling.apache.org/documentation/bundles/scripting/scripting-htl.html#passing-parameters-to-java-use-objects).
 
 ### Bundled Java Class {#bundled-java-class}
 

@@ -23,7 +23,7 @@ Which method you choose depends on how comfortable you are editing the documenta
 
 >[!NOTE]
 >
->Contributions that you submit are covered by the [Adobe terms of use.](https://www.adobe.com/legal/terms.html)
+>Contributions that you submit are covered by the [Adobe terms of use](https://www.adobe.com/legal/terms.html).
 
 ### Create an Issue {#create-an-issue}
 
