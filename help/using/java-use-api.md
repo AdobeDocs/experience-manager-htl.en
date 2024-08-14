@@ -149,7 +149,7 @@ public class Info extends WCMUsePojo {
 
 ### Extending `WCMUsePojo` {#extending-wcmusepojo}
 
-While there are a number of ways of incorporating a Java class with HTL (see the section [Alternatives to `WCMUsePojo`](#alternatives-to-wcmusepojo)), the simplest is to extend the `WCMUsePojo` class. For this example `/apps/my-example/component/info/Info.java`:
+While there are a number of ways of incorporating a Java class with HTL, the simplest is to extend the `WCMUsePojo` class. For this example `/apps/my-example/component/info/Info.java`:
 
 ```java
 package apps.my_example.components.info;
