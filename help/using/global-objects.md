@@ -1,6 +1,6 @@
 ---
 title: HTL Global Objects
-description: Learn about enumerable objects, Java-backed objects, and JavaScript-backed objects in HTL.
+description: Learn about enumerable objects and Java-backed objects in HTL.
 exl-id: ca590b92-f1b3-4e44-a04a-a2c10dff256f
 ---
 
