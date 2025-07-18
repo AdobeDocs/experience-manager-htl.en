@@ -12,15 +12,15 @@ This document gives an overview of the purpose of HTL as well as an introduction
 
 >[!TIP]
 >
->This document presents the purpose of HTL and an overview of its fundamental structure and concepts. If you have questions about specific syntax, please refer to the [HTL specification](specification.md).
+>This document presents the purpose of HTL and an overview of its fundamental structure and concepts. If you have questions about specific syntax, see the [HTL specification](specification.md).
 
 ## HTL Layers {#layers}
 
 In AEM, a number of layers define HTL.
 
 1. **[HTL Specification](specification.md)** - HTL is an open-source, platform-agnostic specification, which anyone is free to implement.
-1. **[Sling HTL Scripting Engine](specification.md)** - The Sling project has created the reference implementation of HTL, which is used by AEM.
-1. **[AEM Extensions](specification.md)** - AEM builds on top of the Sling HTL Scripting Engine to offer developers convenient features specific to AEM.
+1. **[`Sling` HTL Scripting Engine](specification.md)** - The `Sling` project has created the reference implementation of HTL, which is used by AEM.
+1. **[AEM Extensions](specification.md)** - AEM builds on top of the `Sling` HTL Scripting Engine to offer developers convenient features specific to AEM.
 
 This HTL documentation focuses on using HTL to develop AEM solutions. As such, it touches all three layers, linking external resources as necessary.
 

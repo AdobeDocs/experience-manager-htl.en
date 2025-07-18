@@ -55,6 +55,9 @@ In AEM 6.0 and 6.1, HTL was called **Sightly**. Adobe renamed it to **HTML Templ
 
 >[!NOTE]
 >
->This naming change does not impact the code or the API, therefore compatibility is not affected. For more information, please [refer to this announcement video](https://helpx.adobe.com/experience-manager/how-to/announce-htl.html).
+>This naming change does not impact the code or the API, therefore compatibility is not affected. 
+
+<!-- LINK IS 404
+For more information, watch [this announcement video](https://helpx.adobe.com/experience-manager/how-to/announce-htl.html). -->
 
 To find out more about HTL, see [Getting Started with HTML Templating Language (HTL) Guide](overview.md).

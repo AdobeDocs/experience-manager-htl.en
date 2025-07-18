@@ -306,7 +306,7 @@ This section introduces some additional features that go beyond the example desc
 
 Parameters can be passed to a use-class upon initialization.
 
-For details, please refer to the Sling [HTL Scripting Engine documentation](https://sling.apache.org/documentation/bundles/scripting/scripting-htl.html#passing-parameters-to-java-use-objects).
+For details, see the `Sling` [HTL Scripting Engine documentation](https://sling.apache.org/documentation/bundles/scripting/scripting-htl.html#passing-parameters-to-java-use-objects).
 
 ### Bundled Java Class {#bundled-java-class}
 
