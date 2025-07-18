@@ -10,7 +10,7 @@ exl-id: 5d06ff25-d681-4b95-8375-c28a8364eb7e
 >
 >**Have you considered Edge Delivery Services for AEM?**
 >
->You can continue using the methods described in this document for existing projects. However for new projects, Adobe recommends leveraging [Edge Delivery Services.](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/overview)
+>You can continue using the methods described in this document for existing projects. However, for new projects, Adobe recommends leveraging [Edge Delivery Services.](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/overview)
 
 HTML Template Language (HTL), supported by Adobe Experience Manager (AEM), aims to provide a highly productive enterprise-level web framework that enhances security. It also enables HTML developers without Java knowledge to participate better in AEM Projects.
 

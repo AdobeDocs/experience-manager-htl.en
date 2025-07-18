@@ -60,6 +60,6 @@ It is possible to back HTL logic with JavaScript. However, the preferred or reco
 
 >[!NOTE]
 >
->[The JavaScript Use API](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api) has been deprecated for use with AEM as a Cloud Service. Please use [the Java Use API instead.](https://experienceleague.adobe.com/en/docs/experience-manager-htl/content/java-use-ap)
+>[The JavaScript Use API](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api) is now deprecated for use with AEM as a Cloud Service. Instead, use [the Java Use API](https://experienceleague.adobe.com/en/docs/experience-manager-htl/content/java-use-api).
 >
->[Please see the AEM as a Cloud Service release notes](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/deprecated-removed-features) for more information on deprecated and removed features.
+>For more information on deprecated and removed features, see the [AEM as a Cloud Service release notes](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/deprecated-removed-features).
