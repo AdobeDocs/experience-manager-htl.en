@@ -12,6 +12,12 @@ This document gives an overview of the purpose of HTL as well as an introduction
 
 >[!TIP]
 >
+>**Have you considered Edge Delivery Services for AEM?**
+>
+>You can continue using the methods described in this document for existing projects. However, for new projects, Adobe recommends leveraging [Edge Delivery Services.](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/overview)
+
+>[!TIP]
+>
 >This document presents the purpose of HTL and an overview of its fundamental structure and concepts. If you have questions about specific syntax, see the [HTL specification](specification.md).
 
 ## HTL Layers {#layers}

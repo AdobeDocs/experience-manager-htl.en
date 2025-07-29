@@ -2,6 +2,7 @@
 title: History of HTL
 description: For long time users of AEM, this document gives the background on HTL, how it replaces JSP, and the change of name from Sightly.
 exl-id: 00985b35-2130-4946-959a-0a09a34a0f05
+index: no
 ---
 
 # History of HTL {#history-of-htl}

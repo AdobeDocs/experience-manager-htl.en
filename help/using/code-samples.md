@@ -2,6 +2,7 @@
 title: Code Samples
 description: Discover HTL through code samples including the WKND reference implementation and examples such as the Core Components.
 exl-id: cdc0a525-e5d1-4d7f-97ae-b9192163caee
+index: no
 ---
 
 # Code Samples {#code-samples}

@@ -2,6 +2,7 @@
 title: HTL Java Use-API
 description: The HTL Java Use-API enables an HTL file to access helper methods in a custom Java class.
 exl-id: 9a9a2bf8-d178-4460-a3ec-cbefcfc09959
+index: no
 ---
 
 # HTL Java Use-API {#htl-java-use-api}
