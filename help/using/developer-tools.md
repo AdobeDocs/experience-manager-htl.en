@@ -2,6 +2,7 @@
 title: Developer Tools
 description: Check out these tools to help you when developing in HTL.
 exl-id: c5683ee4-a052-4a6f-8ad1-e18a4201414e
+index: no
 ---
 
 # Developer Tools {#developer-tools}
