@@ -14,7 +14,11 @@ exl-id: 5d06ff25-d681-4b95-8375-c28a8364eb7e
 
 HTML Template Language (HTL), supported by Adobe Experience Manager (AEM), aims to provide a highly productive enterprise-level web framework that enhances security. It also enables HTML developers without Java knowledge to participate better in AEM Projects.
 
-[Introduced in AEM 6.0](history.md), the HTML Template Language is the preferred and recommended server-side template system for HTML in AEM. For web developers who need to build robust enterprise websites, the HTML Template Language helps to achieve increased security and development efficiency. 
+[Introduced in AEM 6.0](https://experienceleague.adobe.com/en/docs/experience-manager-htl/content/history), the HTML Template Language is the preferred and recommended server-side template system for HTML in AEM. For web developers who need to build robust enterprise websites, the HTML Template Language helps to achieve increased security and development efficiency. 
+
+<!--
+history.md
+-->
 
 ## Increased Security {#increased-security}
 
@@ -48,8 +52,16 @@ The following video from an [AEM Gems session](https://experienceleague.adobe.co
 
 >[!VIDEO](https://video.tv.adobe.com/v/19504/?quality=9)
 
-Please note that the video refers to HTL by [its former name, Sightly](history.md).
+Please note that the video refers to HTL by [its former name, Sightly](https://experienceleague.adobe.com/en/docs/experience-manager-htl/content/history).
+
+<!--
+history.md
+-->
 
 ## Next Steps {#next-steps}
 
-Now that you know the objectives and advantages of HTL, you can get started with the language. See [Getting Started with the HTML Template Language](getting-started.md).
+Now that you know the objectives and advantages of HTL, you can get started with the language. See [Getting Started with the HTML Template Language](https://experienceleague.adobe.com/en/docs/experience-manager-htl/content/getting-started).
+
+<!--
+getting-started.md
+-->
