@@ -7,7 +7,7 @@ index: no
 
 # HTL Global Objects {#htl-global-objects}
 
-Without having to specify anything, HTL provides access to many objects useful to the developer. These objects are in addition to any that may be introduced through the [Use-API](java-use-api.md).
+Without having to specify anything, HTL provides access to many objects useful to the developer. These objects are in addition to any that may be introduced through the [Use-API](https://experienceleague.adobe.com/en/docs/experience-manager-htl/content/java-use-api).
 
 >[!NOTE]
 >
