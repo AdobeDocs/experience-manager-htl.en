@@ -18,19 +18,15 @@ This document gives an overview of the purpose of HTL as well as an introduction
 
 >[!TIP]
 >
->This document presents the purpose of HTL and an overview of its fundamental structure and concepts. If you have questions about specific syntax, see the [HTL specification](https://experienceleague.adobe.com/en/docs/experience-manager-htl/content/specification).
-
-<!--
-specification.md
--->
+>This document presents the purpose of HTL and an overview of its fundamental structure and concepts. If you have questions about specific syntax, see the [HTL specification](specification.md).
 
 ## HTL Layers {#layers}
 
 In AEM, a number of layers define HTL.
 
-1. **[HTL Specification](https://experienceleague.adobe.com/en/docs/experience-manager-htl/content/specification)** - HTL is an open-source, platform-agnostic specification, which anyone is free to implement.
-1. **[`Sling` HTL Scripting Engine](https://experienceleague.adobe.com/en/docs/experience-manager-htl/content/specification)** - The `Sling` project has created the reference implementation of HTL, which is used by AEM.
-1. **[AEM Extensions](https://experienceleague.adobe.com/en/docs/experience-manager-htl/content/specification)** - AEM builds on top of the `Sling` HTL Scripting Engine to offer developers convenient features specific to AEM.
+1. **[HTL Specification](specification.md)** - HTL is an open-source, platform-agnostic specification, which anyone is free to implement.
+1. **[`Sling` HTL Scripting Engine](specification.md)** - The `Sling` project has created the reference implementation of HTL, which is used by AEM.
+1. **[AEM Extensions](specification.md)** - AEM builds on top of the `Sling` HTL Scripting Engine to offer developers convenient features specific to AEM.
 
 This HTL documentation focuses on using HTL to develop AEM solutions. As such, it touches all three layers, linking external resources as necessary.
 
@@ -57,7 +53,7 @@ Two different kinds of syntaxes can be distinguished:
 * **Block Statements** - If you want to display the `<h1>` element conditionally, use a `data-sly-test` HTML5 data attribute. HTL provides multiple such attributes, which allow attaching behavior to any HTML element, and all are prefixed with `data-sly`.  
 * **Expression Language** - The `${` and `}` characters delimit HTL expressions. At runtime, these expressions are evaluated and their value is injected into the outgoing HTML stream.
 
-See the [HTL specification](https://experienceleague.adobe.com/en/docs/experience-manager-htl/content/specification) for details on both syntaxes.
+See the [HTL specification](specification.md) for details on both syntaxes.
 
 ### The SLY Element {#the-sly-element}
 
@@ -185,7 +181,7 @@ This section quickly walks through the general features of the HTML Template Lan
 
 The HTML Template Language (HTL) Java Use-API enables an HTL file to access helper methods in a custom Java class through `data-sly-use`. This process allows all complex business logic to be encapsulated in the Java code, while the HTL code deals only with direct markup production.
 
-See the document [HTL Java Use-API](https://experienceleague.adobe.com/en/docs/experience-manager-htl/content/java-use-api) for more details.
+See the document [HTL Java Use-API](java-use-api.md) for more details.
 
 ### Automatic Context-Aware Escaping {#automatic-context-aware-escaping}
 
@@ -302,7 +298,7 @@ The following are two short examples.
 
 In this example, if the HTML `head` and `body` elements are in separate files, the `clientlib.html` template must be loaded in each file that requires it.
 
-The section on the template &amp; call statements in the [HTL specification](https://experienceleague.adobe.com/en/docs/experience-manager-htl/content/specification) provides more details about how declaring and calling such templates work.
+The section on the template &amp; call statements in the [HTL specification](specification.md) provides more details about how declaring and calling such templates work.
 
 ### Passing Data to the Client {#passing-data-to-the-client}
 

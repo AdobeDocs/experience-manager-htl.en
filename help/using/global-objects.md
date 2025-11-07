@@ -7,7 +7,7 @@ index: no
 
 # HTL Global Objects {#htl-global-objects}
 
-Without having to specify anything, HTL provides access to many objects useful to the developer. These objects are in addition to any that may be introduced through the [Use-API](https://experienceleague.adobe.com/en/docs/experience-manager-htl/content/java-use-api).
+Without having to specify anything, HTL provides access to many objects useful to the developer. These objects are in addition to any that may be introduced through the [Use-API](java-use-api.md).
 
 >[!NOTE]
 >
@@ -61,6 +61,6 @@ It is possible to back HTL logic with JavaScript. However, the preferred or reco
 
 >[!NOTE]
 >
->[The JavaScript Use API](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api) is now deprecated for use with AEM as a Cloud Service. Instead, use [the Java Use API](https://experienceleague.adobe.com/en/docs/experience-manager-htl/content/java-use-api).
+>[The JavaScript Use API](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api) is now deprecated for use with AEM as a Cloud Service. Instead, use [the Java Use API](java-use-api.md).
 >
 >For more information on deprecated and removed features, see the [AEM as a Cloud Service release notes](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/deprecated-removed-features).

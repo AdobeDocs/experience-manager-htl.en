@@ -44,7 +44,7 @@ No. HTL has powerful extension mechanisms for reuse of logic (the [Use-API](#use
 
 ### What are the main benefits of HTL over JSP? {#benefits}
 
-Security and project efficiency are the main benefits, which are detailed in the [Overview](https://experienceleague.adobe.com/en/docs/experience-manager-htl/content/overview).
+Security and project efficiency are the main benefits, which are detailed in the [Overview](overview.md).
 
 ### Are JavaServer Pages (JSP) going away? {#go-away}
 
@@ -58,4 +58,4 @@ In AEM 6.0 and 6.1, HTL was called **Sightly**. Adobe renamed it to **HTML Templ
 >
 >This naming change does not impact the code or the API, therefore compatibility is not affected. 
 
-To find out more about HTL, see [Getting Started with HTML Templating Language (HTL) Guide](https://experienceleague.adobe.com/en/docs/experience-manager-htl/content/overview).
+To find out more about HTL, see [Getting Started with HTML Templating Language (HTL) Guide](overview.md).
