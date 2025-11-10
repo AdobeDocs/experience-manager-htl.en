@@ -5,7 +5,7 @@ product: adobe experience manager
 git-repo: https://github.com/AdobeDocs/experience-manager-htl.en
 index: y
 landing-page-name: experience-manager
-landing-page-breadcrumb-title: Experience Manager
+landing-page-breadcrumb-title: AEM
 recommendations: noDisplay
 ---
 
