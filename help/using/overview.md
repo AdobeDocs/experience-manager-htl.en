@@ -16,10 +16,6 @@ HTML Template Language (HTL), supported by Adobe Experience Manager (AEM), aims 
 
 [Introduced in AEM 6.0](history.md), the HTML Template Language is the preferred and recommended server-side template system for HTML in AEM. For web developers who need to build robust enterprise websites, the HTML Template Language helps to achieve increased security and development efficiency. 
 
-<!--
-history.md
--->
-
 ## Increased Security {#increased-security}
 
 HTML Template Language (HTL) enhances site security by automatically applying context-aware escaping to all output variables, making it more secure than most other template systems. HTL makes this approach possible because it understands the HTML syntax, and uses that knowledge to adjust the required escaping for expressions, based on their position in the markup. This method can result in expressions placed in `href` or `src` attributes to be escaped differently from expressions placed in other attributes, or elsewhere.
