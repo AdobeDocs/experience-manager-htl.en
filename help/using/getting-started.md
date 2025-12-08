@@ -2,8 +2,19 @@
 title: Getting Started with HTL
 description: Learn about HTL, the preferred and recommended server-side template system for HTML in AEM, and understand the major concepts of the language and its fundamental constructs.
 exl-id: c95eb1b3-3b96-4727-8f4f-d54e7136a8f9
+TQID: https://experienceleague.adobe.com/6IcNpWu2-PLGresZ1H-HM9HAFL-dY5eF0OyIdXJbJ4s
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+topic_v2:
+  - id: a732f735-539c-44c2-ad33-4aa4f7480b3a
+    internal-label: Business
+  - id: ea99d093-20a6-45a0-99ac-a82e7018eb37
+    internal-label: Arts
 ---
-
 # Getting Started with HTL {#getting-started-with-htl}
 
 HTML Template Language (HTL) is the preferred and recommended server-side template system for HTML in Adobe Experience Manager. As in all HTML server-side templating systems, an HTL file defines the output sent to the browser by specifying the HTML itself, some basic presentation logic, and variables to be evaluated at runtime.

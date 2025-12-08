@@ -3,8 +3,14 @@ title: AEM Extensions
 description: AEM offers extensions of the HTL specification to AEM for your convenience as a developer.
 exl-id: d78cb84d-f958-45e2-9c6c-df86a68277d5
 index: no
+TQID: https://experienceleague.adobe.com/DstGHNLbStXG1SHZgLhmMz2tYVV056CvxWOsl4tuGW4
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
-
 # AEM Extensions {#aem-extensions}
 
 Similar to the [Apache Sling extensions of the HTL specification](https://sling.apache.org/documentation/bundles/scripting/scripting-htl.html#extensions-of-the-htl-specification-1), AEM offers some additional expression options that make working with AEM concepts a bit easier directly in the HTL scripts.
