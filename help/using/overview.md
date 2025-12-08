@@ -2,8 +2,17 @@
 title: HTL overview
 description: Discover how AEM supports HTL (HTML Template Language) to provide a productive enterprise-level web framework that enhances security. This framework lets HTML developers without Java knowledge to participate better in AEM Projects.
 exl-id: 5d06ff25-d681-4b95-8375-c28a8364eb7e
+TQID: https://experienceleague.adobe.com/aJOvBYeraXDv104qRJqUlp7d0as9YW1lSIg0EKaAUD0
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+topic_v2:
+  - id: a732f735-539c-44c2-ad33-4aa4f7480b3a
+    internal-label: Business
 ---
-
 # Overview {#overview}
 
 >[!TIP]

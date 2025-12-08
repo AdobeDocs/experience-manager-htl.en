@@ -3,8 +3,14 @@ title: HTL Global Objects
 description: Learn about enumerable objects and Java-backed objects in HTL.
 exl-id: ca590b92-f1b3-4e44-a04a-a2c10dff256f
 index: no
+TQID: https://experienceleague.adobe.com/zhQ4NTPQXgqIUNL9TeYk7sHqVQ5x-xWjps3OylhPJL4
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
-
 # HTL Global Objects {#htl-global-objects}
 
 Without having to specify anything, HTL provides access to many objects useful to the developer. These objects are in addition to any that may be introduced through the [Use-API](java-use-api.md).

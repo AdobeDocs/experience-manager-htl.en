@@ -3,8 +3,19 @@ title: HTL Java Use-API
 description: The HTL Java Use-API enables an HTL file to access helper methods in a custom Java class.
 exl-id: 9a9a2bf8-d178-4460-a3ec-cbefcfc09959
 index: no
+TQID: https://experienceleague.adobe.com/lCMIs0khRwcDzk97TQcNMMl4h7OZNf3KlK2YA4ANbZQ
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+topic_v2:
+  - id: a732f735-539c-44c2-ad33-4aa4f7480b3a
+    internal-label: Business
+  - id: ea99d093-20a6-45a0-99ac-a82e7018eb37
+    internal-label: Arts
 ---
-
 # HTL Java Use-API {#htl-java-use-api}
 
 The HTL Java Use-API enables an HTL file to access helper methods in a custom Java class.
