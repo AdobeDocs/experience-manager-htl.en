@@ -17,7 +17,7 @@ topic_v2:
 ---
 # Getting Started with HTL {#getting-started-with-htl}
 
-HTML Template Language (HTL) is the preferred and recommended server-side template system for HTML in Adobe Experience Manager. As in all HTML server-side templating systems, an HTL file defines the output sent to the browser by specifying the HTML itself, some basic presentation logic, and variables to be evaluated at runtime.
+HTML Template Language (HTL) is the preferred, and recommended, server-side template system for HTML in Adobe Experience Manager. As in all HTML server-side templating systems, an HTL file defines the output sent to the browser by specifying the HTML itself, some basic presentation logic, and variables to be evaluated at runtime.
 
 This document gives an overview of the purpose of HTL as well as an introduction to fundamental concepts and constructs of the language.
 
