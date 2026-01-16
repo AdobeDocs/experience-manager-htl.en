@@ -10,13 +10,12 @@ role: Developer
 
 # Adobe Experience Manager HTL Help {#content}
 
-+ [Overview](overview.md)
-+ [Getting Started with HTL](getting-started.md)
-+ [The HTL Specification](specification.md)
-+ [HTL Global Objects](global-objects.md)
-+ [HTL Java Use-API](java-use-api.md)
-+ [AEM Extensions](aem-extensions.md)
-+ [Developer Tools](developer-tools.md)
-+ [Code Samples](code-samples.md)
-+ [History of HTL](history.md)
-
++ [Overview](/help/using/overview.md)
++ [Getting Started with HTL](/help/using/getting-started.md)
++ [The HTL Specification](/help/using/specification.md)
++ [HTL Global Objects](/help/using/global-objects.md)
++ [HTL Java Use-API](/help/using/java-use-api.md)
++ [AEM Extensions](/help/using/aem-extensions.md)
++ [Developer Tools](/help/using/developer-tools.md)
++ [Code Samples](/help/using/code-samples.md)
++ [History of HTL](/help/using/history.md)
