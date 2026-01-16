@@ -62,4 +62,3 @@ Please note that the video refers to HTL by [its former name, Sightly](history.m
 ## Next Steps {#next-steps}
 
 Now that you know the objectives and advantages of HTL, you can get started with the language. See [Getting Started with the HTML Template Language](getting-started.md).
-
