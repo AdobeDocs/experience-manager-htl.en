@@ -10,7 +10,7 @@ role: Developer
 
 # Adobe Experience Manager HTL Help {#content}
 
-+ [Overview](overview.md)
++ [Overview](/help/using/overview.md)
 + [Getting Started with HTL](getting-started.md)
 + [The HTL Specification](specification.md)
 + [HTL Global Objects](global-objects.md)
