@@ -2,7 +2,7 @@
 title: AEM Extensions
 description: AEM offers extensions of the HTL specification to AEM for your convenience as a developer.
 exl-id: d78cb84d-f958-45e2-9c6c-df86a68277d5
-index: no
+index: false
 TQID: https://experienceleague.adobe.com/DstGHNLbStXG1SHZgLhmMz2tYVV056CvxWOsl4tuGW4
 product_v2:
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
