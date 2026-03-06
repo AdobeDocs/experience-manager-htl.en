@@ -2,7 +2,7 @@
 title: The HTL Specification
 description: See the HTL specification for detailed syntax information.
 exl-id: c0657476-4db6-4fad-ad87-9252b5003237
-index: no
+index: false
 TQID: https://experienceleague.adobe.com/2SNWq2C9a1awkjaGhBmx7I3LgwcyhuSdcG26rodtHqU
 product_v2:
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8

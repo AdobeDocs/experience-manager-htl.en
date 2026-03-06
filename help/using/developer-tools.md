@@ -2,7 +2,7 @@
 title: Developer Tools
 description: Check out these tools to help you when developing in HTL.
 exl-id: c5683ee4-a052-4a6f-8ad1-e18a4201414e
-index: no
+index: false
 TQID: https://experienceleague.adobe.com/ip-WYHSwpvxvdvKMYXDFxXQwuTZjd9Hz1jBeybfmvmI
 product_v2:
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8

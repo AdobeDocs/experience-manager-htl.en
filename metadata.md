@@ -3,7 +3,7 @@ solution: Experience Manager
 type: Documentation
 product: adobe experience manager
 git-repo: https://github.com/AdobeDocs/experience-manager-htl.en
-index: y
+index: true
 landing-page-name: experience-manager
 landing-page-breadcrumb-title: AEM
 recommendations: noDisplay
@@ -25,7 +25,7 @@ metadata.md
 
 * `product`
 * `git-repo`
-* `index: y`
+* `index: true`
 
 No longer used:
 
@@ -45,5 +45,5 @@ Article
 
 * `title`
 * `description`
-* `index: n` (only for previous versions of components)
+* `index: false` (only for previous versions of components)
 
