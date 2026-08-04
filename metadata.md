@@ -1,12 +1,15 @@
 ---
 solution: Experience Manager
 type: Documentation
-product: adobe experience manager
 git-repo: https://github.com/AdobeDocs/experience-manager-htl.en
 index: true
 landing-page-name: experience-manager
 landing-page-breadcrumb-title: AEM
 recommendations: noDisplay
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: "Experience Manager"
+usetq: true
 ---
 
 # Metadata for internal use
